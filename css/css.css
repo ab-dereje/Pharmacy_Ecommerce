@@ -1,0 +1,106 @@
+body {
+    background-image: url("../img/pharmalog.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    padding: 0;
+    height: 0vh;
+}
+
+#image-log {
+    position: relative;
+    height: 43.5rem;
+    width: 93rem;
+    display: none;
+}
+
+.container {
+    padding: 0%;
+    position: relative;
+    left: 55rem;
+    bottom: 35rem;
+    z-index: 1;
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+    font-weight: 500;
+    border: solid white;
+    height: 30rem;
+    width: 25rem;
+    border-radius: 8%;
+    box-shadow: 0px 5px 25px rgb(91, 241, 99);
+    justify-content: center;
+    background-color: white;
+}
+
+.container i {
+    position: relative;
+    font-size: 5rem;
+    left: 10rem;
+    bottom: 3rem;
+}
+
+.container label {
+    position: relative;
+    left: 4rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.container input {
+    position: relative;
+    left: 3.75rem;
+    width: 13rem;
+    height: 1.25rem;
+    border-radius: 8%;
+    border-top: none;
+    border-right: none;
+    outline: none;
+}
+
+.container a {
+    position: relative;
+    left: 15rem;
+    top: 0.5rem;
+    font-size: medium;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+}
+
+.btn-container {
+    position: relative;
+    left: 6rem;
+    margin-top: 1.5rem;
+}
+
+.Lbtn {
+    position: relative;
+    border-radius: 8%;
+    margin-right: 2rem;
+    width: 5rem;
+    height: 2rem;
+    background-color: rgb(51, 255, 255);
+}
+
+.Cbtn {
+    position: relative;
+    border-radius: 8%;
+    margin-right: 2rem;
+    width: 5rem;
+    height: 2rem;
+    background-color: rgb(51, 255, 255);
+}
+
+.imglog img {
+    position: relative;
+    left: 10rem;
+    height: 3rem;
+    bottom: 35rem;
+    display: none;
+}

@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+}
+body .content .imglog {
+  padding: 0%;
+  height: 100%;
+  width: 50%;
+}
+body .content .imglog img {
+  height: 100%;
+  width: 100%;
+}
+body .content .container {
+  justify-content: end;
+  padding: 0%;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  font-size: large;
+  flex-direction: column;
+  font-weight: 500;
+  border: solid white;
+  border-radius: 8px;
+  box-shadow: 0px 5px 25px rgb(91, 241, 99);
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+body .content .container .bx-user {
+  position: relative;
+  font-size: 7rem;
+  bottom: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .content .container label {
+  position: relative;
+  right: 7rem;
+  margin-top: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: larger;
+}
+body .content .container input {
+  position: relative;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 8px;
+  border: none;
+  border-bottom: 2px solid #1c1c1c;
+  outline: none;
+  font-size: medium;
+  padding: 2px 25px;
+}
+body .content .container .user-icon i {
+  position: relative;
+  right: 11rem;
+  bottom: 11rem;
+}
+body .content .container .key {
+  position: relative;
+  right: 11rem;
+  bottom: 4rem;
+  font-size: 1.25rem;
+}
+body .content .container .eye-icon {
+  position: relative;
+  left: 10.5rem;
+  bottom: 1.7rem;
+}
+body .content .container .forgot {
+  position: relative;
+  bottom: 2.5rem;
+  left: 7rem;
+  font-size: medium;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: black;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .content .container .btn-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  bottom: 2.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+}
+body .content .container .btn-container .Lbtn {
+  position: relative;
+  border-radius: 8px;
+  margin-right: 2rem;
+  width: 22rem;
+  left: 1rem;
+  height: 2.5rem;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: large;
+  margin-bottom: 5px;
+}
+body .content .container .btn-container p {
+  padding: 3px;
+}
+body .content .container .btn-container .Signup {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=style.css.map */

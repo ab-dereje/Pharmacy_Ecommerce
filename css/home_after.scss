@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/cesar-couto-sKuVjm0xyLY-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    .header-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .img-log {
+            margin-top: 0.5rem;
+            height: 3rem;
+            width: 3rem;
+            background-color: white;
+            margin-left: 1.5rem;
+            border-radius: 8px;
+            background-image: url("../img/logo.jpeg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .search {
+            width: fit-content;
+            .search-bar {
+                font-size: medium;
+                margin-top: 1rem;
+                width: 25rem;
+                height: 2rem;
+                border-radius: 8px;
+                outline: none;
+                padding: 2px 15px;
+            }
+            i {
+                position: relative;
+                right: 2rem;
+                font-size: large;
+            }
+        }
+        .nav-bar {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20rem;
+            width: 30rem;
+            justify-content: space-between;
+            .menu-icon {
+                margin-top: 0.5rem;
+                width: fit-content;
+                display: flex;
+                justify-content: end;
+                font-size: 2.5rem;
+                margin-right: 0.5rem;
+            }
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                .link {
+                    margin-top: 1.5rem;
+                    margin-left: 3rem;
+                    font-size: large;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    .home {
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        .Products {
+            display: flex;
+            justify-content: space-around;
+            margin-left: 23rem;
+            margin-right: 23rem;
+            .pro-detail {
+                .first-price {
+                    margin-top: 1rem;
+                    margin-left: 10%;
+                    color: white;
+                    font-weight: 700;
+                    font-size: large;
+                    width: fit-content;
+                    text-decoration: line-through;
+                }
+                .second-price {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 1rem;
+                    margin-left: 10%;
+                    color: white;
+                    font-weight: 700;
+                    font-size: large;
+                    .buy-btn {
+                        border-radius: 3px;
+                        box-shadow: 0px 5px 10px green;
+                        background-color: rgb(27, 194, 27);
+                        border: rgb(27, 194, 27);
+                        width: 3rem;
+                        color: white;
+                    }
+                }
+                .pro1 {
+                    height: 10rem;
+                    width: 10rem;
+                    background-color: white;
+                    border-radius: 10px;
+                    background-image: url("../img/aderal.webp");
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    box-shadow: 0px 5px 15px whitesmoke;
+                }
+                .pro2 {
+                    height: 10rem;
+                    width: 10rem;
+                    background-color: white;
+                    border-radius: 10px;
+                    background-image: url("../img/tylenol.webp");
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    box-shadow: 0px 5px 15px whitesmoke;
+                }
+                .pro3 {
+                    height: 10rem;
+                    width: 10rem;
+                    background-color: white;
+                    border-radius: 10px;
+                    background-image: url("../img/zantac.jpg");
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    box-shadow: 0px 5px 15px whitesmoke;
+                }
+            }
+        }
+        .promotion {
+            color: white;
+            display: block;
+            justify-content: center;
+            text-align: center;
+            font-weight: 700;
+            font-size: x-large;
+            margin-top: 4rem;
+        }
+        .get-button {
+            display: flex;
+            justify-content: center;
+            padding-top: 2rem;
+            padding-bottom: 8rem;
+            .btn-home {
+                width: 15rem;
+                height: 2.5rem;
+                font-size: larger;
+                border-radius: 20px;
+                outline: none;
+                background-color: rgb(0, 153, 255);
+                color: white;
+                border: solid rgb(0, 153, 255);
+                box-shadow: 0px 5px 15px rgb(0, 89, 255);
+            }
+        }
+    }
+}
+
+footer {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 11rem;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 13rem;
+    .first-col {
+        h3 {
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: brown;
+        }
+    }
+    .second-col {
+        h3 {
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: brown;
+        }
+    }
+    .third-col {
+        h3 {
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: brown;
+        }
+    }
+}

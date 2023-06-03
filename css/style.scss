@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    // max-height: 100vh;
+    // // background-image: url("../img/pharmalog.avif");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 100vh;
+        // margin-top: 100px;
+        // margin-right: 100px;
+        .imglog {
+            padding: 0%;
+            height: 100%;
+            width: 50%;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .container {
+            justify-content: end;
+            padding: 0%;
+            // position: relative;
+            // z-index: 1;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            font-size: large;
+            flex-direction: column;
+            font-weight: 500;
+            border: solid white;
+            border-radius: 8px;
+            box-shadow: 0px 5px 25px rgb(91, 241, 99);
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            .bx-user {
+                position: relative;
+                font-size: 7rem;
+                bottom: 2rem;
+                width: fit-content;
+            }
+            label {
+                position: relative;
+                right: 7rem;
+                margin-top: 1rem;
+                width: fit-content;
+                font-size: larger;
+            }
+            input {
+                position: relative;
+                width: 20rem;
+                height: 3rem;
+                border-radius: 8px;
+                border: none;
+                border-bottom: 2px solid #1c1c1c;
+                outline: none;
+                font-size: medium;
+                padding: 2px 25px;
+            }
+            .user-icon i {
+                position: relative;
+                right: 11rem;
+                bottom: 11rem;
+            }
+            .key {
+                position: relative;
+                right: 11rem;
+                bottom: 4rem;
+                font-size: 1.25rem;
+            }
+            .eye-icon {
+                position: relative;
+                left: 10.5rem;
+                bottom: 1.7rem;
+            }
+            .forgot {
+                position: relative;
+                bottom: 2.5rem;
+                left: 7rem;
+                font-size: medium;
+                margin-bottom: 0.5rem;
+                text-decoration: none;
+                color: black;
+                width: fit-content;
+            }
+            .btn-container {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-top: 1.5rem;
+                bottom: 2.5rem;
+                width: fit-content;
+                align-items: center;
+                .Lbtn {
+                    position: relative;
+                    border-radius: 8px;
+                    margin-right: 2rem;
+                    width: 22rem;
+                    left: 1rem;
+                    height: 2.5rem;
+                    // background-color: rgb(51, 255, 255);
+                    background-color: #1c1c1c;
+                    color: #fff;
+                    font-size: large;
+                    margin-bottom: 5px;
+                }
+                //     .Cbtn {
+                //         position: relative;
+                //         border-radius: 8px;
+                //         margin-right: 2rem;
+                //         width: 5rem;
+                //         height: 2rem;
+                //         background-color: #1c1c1c;
+                //         color: #fff;
+                //     }
+                p {
+                    padding: 3px;
+                }
+                .Signup {
+                    position: relative;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+}

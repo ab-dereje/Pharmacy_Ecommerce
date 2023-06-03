@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/cesar-couto-sKuVjm0xyLY-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+body .header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .header-content .img-log {
+  margin-top: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  margin-left: 1.5rem;
+  border-radius: 8px;
+  background-image: url("../img/logo.jpeg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body .header-content .nav-bar {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rem;
+  width: 30rem;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+body .header-content .nav-bar div {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+body .header-content .nav-bar div .link {
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  font-size: large;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+body .header-content .nav-bar .create_acc {
+  background-color: rgb(32, 192, 32);
+  width: 5rem;
+  height: 2rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border-color: rgb(32, 192, 32);
+  border-bottom: rgb(32, 192, 32);
+  border-right: rgb(32, 192, 32);
+  color: white;
+  font-size: medium;
+  font-weight: 700;
+  box-shadow: 0px 5px 8px rgb(21, 167, 21);
+  margin-left: 3rem;
+}
+body .header-content .nav-bar .log_acc {
+  color: white;
+  font-size: medium;
+  font-weight: 700;
+  background-color: rgb(32, 192, 32);
+  width: 5rem;
+  height: 2rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border-color: rgb(32, 192, 32);
+  border-bottom: rgb(32, 192, 32);
+  border-right: rgb(32, 192, 32);
+  box-shadow: 0px 5px 8px rgb(21, 167, 21);
+}
+body .home {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+body .home .Products {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 23rem;
+  margin-right: 23rem;
+}
+body .home .Products .pro-detail .first-price {
+  margin-top: 1rem;
+  margin-left: 10%;
+  color: white;
+  font-weight: 700;
+  font-size: large;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: line-through;
+}
+body .home .Products .pro-detail .second-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-left: 10%;
+  color: white;
+  font-weight: 700;
+  font-size: large;
+}
+body .home .Products .pro-detail .second-price .buy-btn {
+  border-radius: 3px;
+  box-shadow: 0px 5px 10px green;
+  background-color: rgb(27, 194, 27);
+  border: rgb(27, 194, 27);
+  width: 3rem;
+  color: white;
+}
+body .home .Products .pro-detail .pro1 {
+  height: 10rem;
+  width: 10rem;
+  background-color: white;
+  border-radius: 10px;
+  background-image: url("../img/aderal.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0px 5px 15px whitesmoke;
+}
+body .home .Products .pro-detail .pro2 {
+  height: 10rem;
+  width: 10rem;
+  background-color: white;
+  border-radius: 10px;
+  background-image: url("../img/tylenol.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0px 5px 15px whitesmoke;
+}
+body .home .Products .pro-detail .pro3 {
+  height: 10rem;
+  width: 10rem;
+  background-color: white;
+  border-radius: 10px;
+  background-image: url("../img/zantac.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0px 5px 15px whitesmoke;
+}
+body .home .promotion {
+  color: white;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: x-large;
+  margin-top: 4rem;
+}
+body .home .get-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+}
+body .home .get-button .btn-home {
+  width: 15rem;
+  height: 2.5rem;
+  font-size: larger;
+  border-radius: 20px;
+  outline: none;
+  background-color: rgb(0, 153, 255);
+  color: white;
+  border: solid rgb(0, 153, 255);
+  box-shadow: 0px 5px 15px rgb(0, 89, 255);
+}
+
+footer {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 11rem;
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-right: 13rem;
+}
+footer .first-col h3 {
+  margin-bottom: 1rem;
+}
+footer .first-col p {
+  margin-bottom: 1rem;
+  color: brown;
+}
+footer .second-col h3 {
+  margin-bottom: 1rem;
+}
+footer .second-col p {
+  margin-bottom: 1rem;
+  color: brown;
+}
+footer .third-col h3 {
+  margin-bottom: 1rem;
+}
+footer .third-col p {
+  margin-bottom: 1rem;
+  color: brown;
+}/*# sourceMappingURL=home_before.css.map */

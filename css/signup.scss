@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/wengang-zhai-BFB7ydn1-DI-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: row;
+        height: 100vh;
+        .container {
+            justify-content: end;
+            padding: 0%;
+            height: 85%;
+            width: 44%;
+            display: flex;
+            font-size: large;
+            flex-direction: column;
+            font-weight: 500;
+            border: solid white;
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgb(255, 255, 247);
+            align-items: center;
+            background-color: white;
+            margin-right: 3rem;
+            .sub {
+                margin-bottom: 0.5rem;
+                width: fit-content;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                label {
+                    right: 7rem;
+                    margin-top: 1rem;
+                    width: 200px;
+                    font-size: larger;
+                }
+                input {
+                    height: 3rem;
+                    border-radius: 8px;
+                    border: solid 1px;
+                    outline: none;
+                    font-size: medium;
+                    padding: 2px 25px;
+                }
+            }
+            .bx-user-plus {
+                position: relative;
+                font-size: 6rem;
+                bottom: 1.5rem;
+                width: fit-content;
+            }
+            .btn-container {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1.5rem;
+                width: fit-content;
+                align-items: center;
+                margin-bottom: 3rem;
+                .Sbtn {
+                    border-radius: 8px;
+                    width: 22rem;
+                    height: 2.5rem;
+                    background-color: #1c1c1c;
+                    color: #fff;
+                    font-size: large;
+                }
+            }
+        }
+    }
+}
