@@ -5,38 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/home_after.css">
-    <link rel="stylesheet" href="Boxicons/css/boxicons.min.css">
-    <title>home</title>
+    <link rel="stylesheet" href="../Assets/css/home_before.css">
+    <link rel="stylesheet" href="../Assets/Boxicons/css/boxicons.min.css">
+    <title>home_</title>
 </head>
 
 <body>
-
     <div class="header-content">
         <div class="img-log">
             <!-- <img src="./img/logo.jpeg"> -->
         </div>
-        <div class="search">
+        <!-- <div class="search">
             <input class="search-bar" placeholder="search" type="text">
             <i class='bx bx-search-alt-2'></i>
-        </div>
+        </div> -->
         <div class="nav-bar">
-
             <nav>
                 <div>
-                    <a href="" class="link">home</a>
-                    <a href="" class="link">about</a>
-                    <a href="" class="link">services</a>
-                    <a href="" class="link">shop</a>
+                    <a href="#home" class="link">home</a>
+                    <a href="#about" class="link">about</a>
+
                 </div>
+
             </nav>
-            <div class="menu-icon">
+            <button class="create_acc"><a href="../view/index.php">Sign Up</a></button>
+            <button class="log_acc"><a href="../view/login.view.php">Login</a></button>
+            <!-- <div class="menu-icon">
                 <i class='bx bxs-user-circle'></i>
-            </div>
+            </div> -->
         </div>
 
     </div>
-    <div class="home">
+    <div class="home" id="home">
 
         <div class="Products">
             <div class="pro-detail">
@@ -71,7 +71,8 @@
             <button class="btn-home">Get more</button>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
+        <h1>About</h1>
         <div class="about-container">
             <div class="company-info">
                 <h4>Company Information</h4>
@@ -102,9 +103,10 @@
 
         </div>
     </div>
-
-
 </body>
+
+
+
 <footer>
     <div class="first-col">
         <h3>Customer Service</h3>

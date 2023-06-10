@@ -8,12 +8,17 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 body .header-content {
+  position: fixed;
+  top: 0rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #576c7c;
+  height: 4rem;
 }
 body .header-content .img-log {
   margin-top: 0.5rem;
@@ -28,6 +33,7 @@ body .header-content .img-log {
   background-repeat: no-repeat;
 }
 body .header-content .search {
+  margin-left: 2rem;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -42,7 +48,9 @@ body .header-content .search .search-bar {
 }
 body .header-content .search i {
   position: relative;
+  bottom: 1.75rem;
   right: 2rem;
+  left: 25rem;
   font-size: large;
 }
 body .header-content .nav-bar {
@@ -77,6 +85,7 @@ body .home {
   margin-top: 6rem;
   display: flex;
   flex-direction: column;
+  padding-top: 4rem;
 }
 body .home .Products {
   display: flex;
@@ -169,6 +178,15 @@ body .home .get-button .btn-home {
   color: white;
   border: solid rgb(0, 153, 255);
   box-shadow: 0px 5px 15px rgb(0, 89, 255);
+}
+body .about {
+  padding-top: 5rem;
+}
+body .about h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
 }
 body .about .about-container {
   display: grid;

@@ -8,11 +8,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
+    height: fit-content;
     .header-content {
+        position: fixed;
+        top: 0rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        background-color: #576c7c;
+        height: 4rem;
         .img-log {
             margin-top: 0.5rem;
             height: 3rem;
@@ -26,6 +31,7 @@ body {
             background-repeat: no-repeat;
         }
         .search {
+            margin-left: 2rem;
             width: fit-content;
             .search-bar {
                 font-size: medium;
@@ -38,7 +44,9 @@ body {
             }
             i {
                 position: relative;
+                bottom: 1.75rem;
                 right: 2rem;
+                left: 25rem;
                 font-size: large;
             }
         }
@@ -74,6 +82,7 @@ body {
         margin-top: 6rem;
         display: flex;
         flex-direction: column;
+        padding-top: 4rem;
         // display: none;
         .Products {
             display: flex;
@@ -170,6 +179,13 @@ body {
         }
     }
     .about {
+        padding-top: 5rem;
+        h1 {
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+        }
         .about-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
