@@ -1,3 +1,8 @@
+<?php
+
+require_once("../controller/home.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,9 +18,13 @@
 <body>
 
     <div class="header-content">
-        <div class="img-log">
-            <!-- <img src="./img/logo.jpeg"> -->
-        </div>
+        <!-- <div class="img-log">
+
+        </div> -->
+
+        
+        <?php echo $divs; ?>
+
         <div class="search">
             <input class="search-bar" placeholder="search" type="text">
             <i class='bx bx-search-alt-2'></i>
@@ -24,10 +33,10 @@
 
             <nav>
                 <div>
-                    <a href="" class="link">home</a>
+                    <a href="home" class="link">home</a>
                     <a href="" class="link">about</a>
                     <a href="" class="link">services</a>
-                    <a href="" class="link"><i class='bx bx-cart'></i></a>
+                    <a href="./shopping.php" class="link"><i class='bx bx-cart'></i></a>
                 </div>
             </nav>
             <div class="menu-icon">
@@ -36,7 +45,7 @@
         </div>
 
     </div>
-    <div class="home">
+    <div class="home" id="home">
 
         <div class="Products">
             <div class="pro-detail">

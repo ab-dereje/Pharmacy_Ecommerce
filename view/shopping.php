@@ -23,7 +23,7 @@
 
             <nav>
                 <div>
-                    <a href="" class="link">home</a>
+                    <a href="./homePage.view.php" class="link">home</a>
                     <a href="" class="link">about</a>
                     <a href="" class="link">services</a>
                     <a href="" class="link"><i class='bx bx-cart'></i></a>
@@ -45,20 +45,89 @@
             </div>
         </div> -->
 
-        <table>
-            <thead>
-                <tr>
-                    <th>medicine_id</th>
-                    <th>Name</th>
-                    <th>Quantity</th>
-                    <th>prescription</th>
-                    <th>payment</th>
+        <table class="table" border="1" height="300" width="600">
+            <thead class="thead">
+                <tr class="tr">
+                    <th class="th">medicine_id</th>
+                    <th class="th">Name</th>
+                    <th class="th">Quantity</th>
+                    <th class="th">prescription</th>
+                    <th class="th">payment</th>
+                    <th class="th">Delete</th>
                 </tr>
             </thead>
             <tbody>
+                <?php
+                    $conn =require_once('../model/database.php');
+                    $query1 = mysqli_query($conn,"select * from Product");
+                    $query3 = mysqli_query($conn,"select * from Product");
+                    $query2 = mysqli_query($conn,"select * from User");
+                    while($row=mysqli_fetch_array($query1)){
+                ?> 
+                <tr>
+                    <td class="td"><?php echo $row['med_id'] ; ?></td>
+                    <td class="td"><?php echo $row['med_name']; ?></td>
+                    <td class="td"><?php echo $row['type']; ?></td>
+                    <td class="td"><?php echo $row['description']; ?></td>
+                    <td class="td"><?php echo $row['price']; ?></td>
+                    <td class="td" ><button class="btn"><i class='bx bx-message-alt-minus'></i></button></td>
+                </tr>
+                
+
+                 <?php   } ?>
+                
             </tbody>
         </table>
+        <div class="pay-btn">
+            <button class="proced-pay">Next</button>
+        </div>
+    </div>
+    <div class="Billing">
+        <button class="close"><i class='bx bx-window-close'></i></button>
+        <div class="container">
+            <div class="fill-info">
+                <label for="firstName">Full Name *</label>
+                <input name="firstName" id="firstName" type="text">
+                <label for="address">Address *</label>
+                <input name="address" id="address" type="text">
+                <label for="phone">Phone *</label>
+                <input name="phone" id="phone" type="text">
+            </div>
+            <div class="order">
+                <table class="table" border="1" >
+                    <thead class="thead">
+                        <tr class="tr">
+                            <th class="th">product</th>
+                            <th class="th">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            // $conn =require_once('../model/database.php');
+                            while($row=mysqli_fetch_array($query3)){
+                        ?> 
+                        <tr>
+                            <td class="td"><?php echo $row['med_name']; ?></td>
+                            <td class="td"><?php echo $row['price']; ?></td>
+                        </tr>
+                        
 
+                        <?php   } ?>
+
+                        <tr>
+                            <td class="td">Total</td>
+                            <td class="td"> ?</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <div class="payment-method">
+                    <label class="telebirr">Payment is through Telebirr !</label>
+                    <button class="payment" >PLACE ORDER</button>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </body>
 <footer>

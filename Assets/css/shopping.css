@@ -4,7 +4,6 @@
 }
 
 body {
-  background-image: url(../img/cesar-couto-sKuVjm0xyLY-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,8 +81,124 @@ body .header-content .nav-bar div .link {
 }
 body .shop {
   display: flex;
+  flex-direction: column;
   padding-top: 5rem;
-  height: 100vh;
+  min-height: 100vh;
+  justify-content: center;
+}
+body .shop .table {
+  color: black;
+  margin-left: 20rem;
+}
+body .shop .table .th {
+  padding: 0.5rem;
+}
+body .shop .table .td {
+  padding: 1rem;
+}
+body .shop .table .td .btn {
+  background: none;
+  border: none;
+}
+body .shop .table .td .btn .bx {
+  font-size: large;
+  color: black;
+  background: none;
+  border: none;
+}
+body .shop .pay-btn {
+  margin-top: 1rem;
+  margin-left: 22rem;
+}
+body .shop .pay-btn .proced-pay {
+  background-color: rgb(57, 179, 57);
+  color: white;
+  border-radius: 8px;
+  height: 2.5rem;
+  width: 4rem;
+  border: none;
+  box-shadow: 0px 5px 15px rgb(99, 201, 99);
+}
+body .Billing {
+  height: 60vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border: solid;
+  margin-left: 10rem;
+}
+body .Billing .close {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  margin-left: 97%;
+  background: none;
+  border: none;
+}
+body .Billing .close .bx {
+  font-size: x-large;
+  font-weight: 700;
+}
+body .Billing .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-top: 0.5rem;
+  height: 100%;
+}
+body .Billing .fill-info {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+}
+body .Billing .fill-info label {
+  font-size: larger;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .Billing .fill-info input {
+  width: 10rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+body .Billing .order {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px;
+  padding: 1rem;
+  width: 40%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+body .Billing .order .table {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 15rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+body .Billing .order .payment-method {
+  display: flex;
+  flex-direction: column;
+}
+body .Billing .order .payment-method .telebirr {
+  margin-bottom: 1rem;
+  font-size: medium;
+  font-weight: 600;
+}
+body .Billing .order .payment-method .payment {
+  height: 2.5rem;
+  background-color: rgb(6, 6, 90);
+  color: white;
+  border-radius: 4px;
 }
 
 footer {

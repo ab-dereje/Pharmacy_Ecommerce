@@ -30,14 +30,19 @@ body .container .email {
   height: 2rem;
   width: 13rem;
   margin-bottom: 1rem;
+  border-radius: 4px;
+  padding-left: 0.5rem;
+  overflow: hidden;
 }
 body .container .password {
   height: 2rem;
   width: 13rem;
   margin-bottom: 1rem;
+  border-radius: 4px;
+  padding-left: 0.5rem;
 }
 body .container .btn {
-  height: 1.5rem;
+  height: 2rem;
   width: 13rem;
   background-color: rgb(68, 68, 122);
   color: white;

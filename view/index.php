@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form action="signup.php" method="post" novalidate>
+    <form action="/controller/signup.php" method="post" novalidate>
         <div class="content">
 
             <div class="container">
