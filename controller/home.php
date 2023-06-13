@@ -1,6 +1,6 @@
 <?php
 
-require_once("../view/homePage.php");
+require_once("../view/homePage.view.php");
 
 $conn =require_once('../model/database.php');
 $sql = "SELECT url FROM Product";
@@ -31,8 +31,6 @@ while ($row = mysqli_fetch_assoc($result)) {
     </div>
 </div>" . PHP_EOL;
 }
-
-
 
 
 ?>

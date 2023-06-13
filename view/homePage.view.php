@@ -18,9 +18,9 @@ require_once("../controller/home.php");
 <body>
 
     <div class="header-content">
-        <!-- <div class="img-log">
+        <div class="img-log">
 
-        </div> -->
+        </div>
 
         
         <?php echo $divs; ?>
@@ -48,15 +48,19 @@ require_once("../controller/home.php");
     <div class="home" id="home">
 
         <div class="Products">
-            <div class="pro-detail">
+
+
+            <?php echo $divs; ?>
+
+            <!-- <div class="pro-detail">
                 <div class="pro1"></div>
                 <p class="first-price">100$</p>
                 <div class="second-price">
                     <p>90$</p>
                     <button class="buy-btn">Buy</button>
                 </div>
-            </div>
-            <div class="pro-detail">
+            </div>  -->
+            <!-- <div class="pro-detail">
                 <div class="pro2"></div>
                 <p class="first-price">100$</p>
                 <div class="second-price">
@@ -71,7 +75,7 @@ require_once("../controller/home.php");
                     <p>90$</p>
                     <button class="buy-btn">Buy</button>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="promotion">
             <p>Subscribe to the one source website <br> receive a 10% discount</p>

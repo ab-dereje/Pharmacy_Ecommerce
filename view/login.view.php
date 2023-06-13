@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form action="login.php" method="POST" novalidate>
+    <form action="../controller/login.php" method="POST" novalidate>
         <div class="content">
             <div class="imglog">
                 <img src='../Assets/img/log.jpg' />

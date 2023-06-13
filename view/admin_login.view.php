@@ -11,10 +11,12 @@
 <body>
     <div class="container">
         <i class='bx bxs-user-pin'></i>
-        <label type="text" class="admin">Admin</label>
-        <input type="text" class="email" name="email" placeholder="  enter email">
-        <input type="password" class="password" name="password" placeholder="  password">
-        <button type="submit" class="btn" name="submit">Login</button>
+        <form action="admin_home.view.php">
+            <label type="text" class="admin">Admin</label>
+            <input type="text" class="email" name="email" placeholder="  enter email">
+            <input type="password" class="password" name="password" placeholder="  password">
+            <button type="submit" class="btn" name="submit">Login</button>
+        </form>
 
     </div>
     

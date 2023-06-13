@@ -65,7 +65,7 @@
                     while($row=mysqli_fetch_array($query1)){
                 ?> 
                 <tr>
-                    <td class="td"><?php echo $row['med_id'] ; ?></td>
+                    <td class="td" ><?php echo $row['med_id'] ; ?></td>
                     <td class="td"><?php echo $row['med_name']; ?></td>
                     <td class="td"><?php echo $row['type']; ?></td>
                     <td class="td"><?php echo $row['description']; ?></td>
