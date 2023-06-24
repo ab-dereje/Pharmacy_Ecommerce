@@ -19,6 +19,7 @@ body .header-content {
   justify-content: space-between;
   background-color: #576c7c;
   height: 4rem;
+  z-index: 3;
 }
 body .header-content .img-log {
   margin-top: 0.5rem;
@@ -66,8 +67,12 @@ body .header-content .nav-bar .menu-icon {
   width: fit-content;
   display: flex;
   justify-content: end;
-  font-size: 2.5rem;
   margin-right: 0.5rem;
+}
+body .header-content .nav-bar .menu-icon .menu-profile {
+  font-size: 2.5rem;
+  background-color: #576c7c;
+  border: none;
 }
 body .header-content .nav-bar div {
   display: flex;
@@ -88,10 +93,14 @@ body .home {
   padding-top: 4rem;
 }
 body .home .Products {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-around;
   margin-left: 23rem;
   margin-right: 23rem;
+}
+body .home .Products .pro-detail {
+  margin-top: 1rem;
 }
 body .home .Products .pro-detail .first-price {
   margin-top: 1rem;
@@ -269,6 +278,53 @@ body .about .social-media a {
   font-size: larger;
   font-weight: 800;
   margin-left: 0.25rem;
+}
+body .profile {
+  position: fixed;
+  display: none;
+  left: 75%;
+  top: 5rem;
+  height: 17rem;
+  width: 20rem;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-radius: 8%;
+  z-index: 1;
+}
+body .profile .info {
+  display: flex;
+  margin: 3rem;
+  margin-bottom: 2rem;
+}
+body .profile .info .img-profile {
+  margin-right: 1rem;
+  height: 4rem;
+  width: 4rem;
+  background-color: rgb(85, 190, 185);
+  border-radius: 50%;
+}
+body .profile .manage {
+  margin: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+body .profile .manage a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+body .profile .logout-btn {
+  margin-left: 3rem;
+}
+body .profile .logout-btn .btn {
+  height: 2rem;
+  width: 3rem;
+  outline: none;
+  border: none;
+}
+body .profile .logout-btn .btn a {
+  text-decoration: none;
+  color: black;
 }
 
 footer {

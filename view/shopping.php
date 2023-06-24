@@ -129,6 +129,9 @@
         </div>
         
     </div>
+
+    <script src="../javaScript/shopping.js"></script>
+
 </body>
 <footer>
     <div class="first-col">

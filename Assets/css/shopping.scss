@@ -118,9 +118,11 @@ body {
         }
     }
     .Billing {
+        margin-top: 10rem;
+        margin-bottom: 8rem;
         height: 60vh;
         width: 70%;
-        display: flex;
+        display: none;
         flex-direction: column;
         padding: 0.5rem;
         border: solid;

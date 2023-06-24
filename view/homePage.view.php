@@ -23,7 +23,7 @@ require_once("../controller/home.php");
         </div>
 
         
-        <?php echo $divs; ?>
+        
 
         <div class="search">
             <input class="search-bar" placeholder="search" type="text">
@@ -33,14 +33,14 @@ require_once("../controller/home.php");
 
             <nav>
                 <div>
-                    <a href="home" class="link">home</a>
-                    <a href="" class="link">about</a>
+                    <a href="#home" class="link">home</a>
+                    <a href="#about" class="link">about</a>
                     <a href="" class="link">services</a>
                     <a href="./shopping.php" class="link"><i class='bx bx-cart'></i></a>
                 </div>
             </nav>
             <div class="menu-icon">
-                <i class='bx bxs-user-circle'></i>
+                <button class="menu-profile"><i class='bx bxs-user-circle'></i></button>
             </div>
         </div>
 
@@ -84,7 +84,7 @@ require_once("../controller/home.php");
             <button class="btn-home">Get more</button>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <h1>About</h1>
         <div class="about-container">
             <div class="company-info">
@@ -116,7 +116,28 @@ require_once("../controller/home.php");
 
         </div>
     </div>
+    <form action="../controller/logout.php" method="POST" novalidate>
+        <div class="profile">
+            <div class="info">
+                <div class="img-profile">
 
+                </div>
+                <div class="full-name">
+                    <h3>Mr. A </h3>
+                    <h5>ekele@gmail.com</h5>
+
+                </div>
+            </div>
+            <div class="manage">
+                <a href=""><h4>Manage Account</h4></a>
+            </div>
+            <div class="logout-btn">
+                <button class="btn"><a href="../view/homepage_before.view.php">Logout</a></button>
+            </div>
+        </div>
+    </form>
+
+    <script src="../javaScript/homepage_after.js"></script>
 
 </body>
 <footer>

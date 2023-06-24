@@ -120,9 +120,11 @@ body .shop .pay-btn .proced-pay {
   box-shadow: 0px 5px 15px rgb(99, 201, 99);
 }
 body .Billing {
+  margin-top: 10rem;
+  margin-bottom: 8rem;
   height: 60vh;
   width: 70%;
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 0.5rem;
   border: solid;
