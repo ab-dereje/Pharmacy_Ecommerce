@@ -36,7 +36,7 @@
                     <button type='submit' class='Lbtn'>Login</button>
                     <!-- <button type='submit' class='Cbtn'>Signup</button> -->
                     <p>Or</p>
-                    <a href="" class="Signup">Sign Up</a>
+                    <a href="./index.php" class="Signup">Sign Up</a>
                 </div>
 
             </div>

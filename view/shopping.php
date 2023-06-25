@@ -59,7 +59,7 @@
             <tbody>
                 <?php
                     $conn =require_once('../model/database.php');
-                    $query1 = mysqli_query($conn,"select * from Product");
+                    $query1 = mysqli_query($conn,"select * from Shopping");
                     $query3 = mysqli_query($conn,"select * from Product");
                     $query2 = mysqli_query($conn,"select * from User");
                     while($row=mysqli_fetch_array($query1)){

@@ -100,7 +100,7 @@ body .home .Products {
   margin-right: 23rem;
 }
 body .home .Products .pro-detail {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 body .home .Products .pro-detail .first-price {
   margin-top: 1rem;
@@ -115,13 +115,14 @@ body .home .Products .pro-detail .first-price {
 body .home .Products .pro-detail .second-price {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-left: 10%;
   color: white;
   font-weight: 700;
   font-size: large;
 }
 body .home .Products .pro-detail .second-price .buy-btn {
+  margin-right: 3rem;
   border-radius: 3px;
   box-shadow: 0px 5px 10px green;
   background-color: rgb(27, 194, 27);

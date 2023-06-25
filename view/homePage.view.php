@@ -1,6 +1,7 @@
 <?php
 
 require_once("../controller/home.php");
+require_once("../controller/profile.php")
 ?>
 
 <!DOCTYPE html>
@@ -42,41 +43,44 @@ require_once("../controller/home.php");
             <div class="menu-icon">
                 <button class="menu-profile"><i class='bx bxs-user-circle'></i></button>
             </div>
+            
         </div>
 
     </div>
     <div class="home" id="home">
+        <form action="../controller/shopping.php" method="POST">
+            <div class="Products">
 
-        <div class="Products">
 
+                <?php echo $divs; ?>
 
-            <?php echo $divs; ?>
-
-            <!-- <div class="pro-detail">
-                <div class="pro1"></div>
-                <p class="first-price">100$</p>
-                <div class="second-price">
-                    <p>90$</p>
-                    <button class="buy-btn">Buy</button>
+                <!-- <div class="pro-detail">
+                    <div class="pro1"></div>
+                    <p class="first-price">100$</p>
+                    <div class="second-price">
+                        <p>90$</p>
+                        <button class="buy-btn">Buy</button>
+                    </div>
+                </div>  -->
+                <!-- <div class="pro-detail">
+                    <div class="pro2"></div>
+                    <p class="first-price">100$</p>
+                    <div class="second-price">
+                        <p>90$</p>
+                        <button class="buy-btn">Buy</button>
+                    </div>
                 </div>
-            </div>  -->
-            <!-- <div class="pro-detail">
-                <div class="pro2"></div>
-                <p class="first-price">100$</p>
-                <div class="second-price">
-                    <p>90$</p>
-                    <button class="buy-btn">Buy</button>
-                </div>
+                <div class="pro-detail">
+                    <div class="pro3"></div>
+                    <p class="first-price">100$</p>
+                    <div class="second-price">
+                        <p>90$</p>
+                        <button class="buy-btn">Buy</button>
+                    </div>
+                </div> -->
             </div>
-            <div class="pro-detail">
-                <div class="pro3"></div>
-                <p class="first-price">100$</p>
-                <div class="second-price">
-                    <p>90$</p>
-                    <button class="buy-btn">Buy</button>
-                </div>
-            </div> -->
-        </div>
+        </form>
+        
         <div class="promotion">
             <p>Subscribe to the one source website <br> receive a 10% discount</p>
         </div>
@@ -122,11 +126,12 @@ require_once("../controller/home.php");
                 <div class="img-profile">
 
                 </div>
-                <div class="full-name">
-                    <h3>Mr. A </h3>
-                    <h5>ekele@gmail.com</h5>
+                <?php echo $div1; ?>
+                <!-- <div class="full-name">
+                    <h3><php echo $user_name; ?></h3>
+                    <h5><php echo $email; ?></h5>
 
-                </div>
+                </div> -->
             </div>
             <div class="manage">
                 <a href=""><h4>Manage Account</h4></a>
@@ -136,6 +141,7 @@ require_once("../controller/home.php");
             </div>
         </div>
     </form>
+    
 
     <script src="../javaScript/homepage_after.js"></script>
 
