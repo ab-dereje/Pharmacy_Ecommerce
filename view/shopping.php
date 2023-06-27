@@ -63,15 +63,15 @@
                     $query3 = mysqli_query($conn,"select * from Product");
                     $query2 = mysqli_query($conn,"select * from User");
                     while($row=mysqli_fetch_array($query1)){
+                        $med_id=$row['med_id'];
                 ?> 
                 <tr>
                     <td class="td" ><?php echo $row['med_id'] ; ?></td>
                     <td class="td"><?php echo $row['med_name']; ?></td>
-                    <td class="td"><?php echo $row['type']; ?></td>
-                    <td class="td"><?php echo $row['description']; ?></td>
+                    <td class="td"><input name="quantity" value="1"></td>
+                    <td class="td"><?php echo $row['prescription']; ?></td>
                     <td class="td"><?php echo $row['price']; ?></td>
-                    <td class="td" ><button class="btn"><i class='bx bx-message-alt-minus'></i></button></td>
-                </tr>
+                    <td class="td"><button class="btn" ><i data="<?php echo $med_id; ?>" class='bx bx-message-alt-minus'></i></button></td>
                 
 
                  <?php   } ?>

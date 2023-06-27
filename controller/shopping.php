@@ -26,7 +26,7 @@
         if (!$result1) {
             echo mysqli_error($conn);
         }
-        
+        header("Location: ../view/homePage.view.php");
     }
 
 ?>
