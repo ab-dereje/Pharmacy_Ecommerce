@@ -48,7 +48,7 @@ require_once("../controller/profile.php")
 
     </div>
     <div class="home" id="home">
-        <form action="../controller/shopping.php" method="POST">
+        <!-- <form action="../controller/shopping.php" method="POST"> -->
             <div class="Products">
 
 
@@ -79,7 +79,7 @@ require_once("../controller/profile.php")
                     </div>
                 </div> -->
             </div>
-        </form>
+        <!-- </form> -->
         
         <div class="promotion">
             <p>Subscribe to the one source website <br> receive a 10% discount</p>
@@ -144,6 +144,7 @@ require_once("../controller/profile.php")
     
 
     <script src="../javaScript/homepage_after.js"></script>
+    <script src="../javaScript/cart.js"></script>
 
 </body>
 <footer>
