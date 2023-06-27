@@ -20,6 +20,7 @@ function PageTransitions() {
     const deleteBtns = document.querySelectorAll(".btn");
     deleteBtns.forEach((deleteBtn) => {
         deleteBtn.addEventListener('click', (event) => {
+            const quant = event.target.getAttribute('value')
             const medId = event.target.getAttribute('data');
             // const medId = event.target.dataset.medId;
             console.log(medId);
@@ -35,6 +36,8 @@ function PageTransitions() {
             form.submit();
         })
     });
+
+
 
 
     billing.style.display = "none";

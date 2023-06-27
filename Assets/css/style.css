@@ -117,4 +117,11 @@ body .content .container .btn-container .Signup {
   position: relative;
   text-decoration: none;
   color: black;
+}
+body .content .container .incorect {
+  position: relative;
+  bottom: 14rem;
+  font-size: 15px;
+  margin-right: 4rem;
+  color: red;
 }/*# sourceMappingURL=style.css.map */

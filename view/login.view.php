@@ -1,3 +1,7 @@
+<?php
+require_once("../controller/login.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +26,7 @@
                 <input id='userName' type='text' name="email" required placeholder="   Type your username" />
                 <label class='pass' for="password">Password</label>
                 <input id='password' type='password' name="password" required placeholder="  Type your password" />
+                <!-- <label ></label> -->
                 <div class="eye-icon">
                     <i class='bx bxs-low-vision'></i>
                 </div>
@@ -38,7 +43,7 @@
                     <p>Or</p>
                     <a href="./index.php" class="Signup">Sign Up</a>
                 </div>
-
+                <?php var_dump($div); ?>
             </div>
         </div>
     </form>

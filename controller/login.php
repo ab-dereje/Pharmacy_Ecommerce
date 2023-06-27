@@ -1,7 +1,7 @@
 <?php
 
 
-require_once("../view/login.view.php");
+
 
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
@@ -14,6 +14,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $result = $conn->query($sql);
     $user = $result->fetch_assoc();
     // $user[]
+    $div="";
     
     if($user){
         if (password_verify($_POST["password"], $user["password"])){
@@ -24,7 +25,15 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             header("Location: ../view/homePage.view.php");
             exit;
         }
+        else{
+            $div.="<label class='incorect'>try again</label>";
+            header("Location:../view/login.view.php");
+            
+    
+        }
     }else{
-        echo "try again";
+        $div.="<label class='incorect'>try again</label>";
+        header("../view/login.view.php");
+
     }
 }

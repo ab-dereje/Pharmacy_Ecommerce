@@ -11,13 +11,15 @@ $divs = "";
 while ($row = mysqli_fetch_assoc($result)) {
     $url = $row['url'];
     $med_id = $row['med_id'];
+    $price= $row['price'];
+    $pr=($price*1.1);
     $divs .= "<div class='pro-detail'>
     <div class='pro1' style='background-image: url(\"$url\")'></div>
-    <p class='first-price'>100$</p>
+    <p class='first-price'>$pr$</p>
     <div class='second-price'>
         
-        <p>90$</p>
-        <button class='buy-btn' data-med-id='$med_id'>Buy</button>
+        <p>$price$</p>
+        <button class='buy-btn' data-med-id='$med_id'>Add</button>
     </div>
 </div>" . PHP_EOL;
 }

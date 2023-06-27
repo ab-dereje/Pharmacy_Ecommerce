@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,8 +19,8 @@
             <!-- <img src="./img/logo.jpeg"> -->
         </div>
         <div class="search">
-            <input class="search-bar" placeholder="search" type="text">
-            <i class='bx bx-search-alt-2'></i>
+            <!-- <input class="search-bar" placeholder="search" type="text">
+            <i class='bx bx-search-alt-2'></i> -->
         </div>
         <div class="nav-bar">
 
@@ -30,7 +33,7 @@
                 </div>
             </nav>
             <div class="menu-icon">
-                <i class='bx bxs-user-circle'></i>
+                <!-- <i class='bx bxs-user-circle'></i> -->
             </div>
         </div>
 
@@ -72,7 +75,7 @@
                     <td class="td"><?php echo $row['prescription']; ?></td>
                     <td class="td"><?php echo $row['price']; ?></td>
                     <td class="td"><button class="btn" ><i data="<?php echo $med_id; ?>" class='bx bx-message-alt-minus'></i></button></td>
-                
+                </tr>
 
                  <?php   } ?>
                 
@@ -129,6 +132,27 @@
         </div>
         
     </div>
+    <form action="../controller/logout.php" method="POST" novalidate>
+        <div class="profile">
+            <div class="info">
+                <div class="img-profile">
+
+                </div>
+                <?php echo $div1; ?>
+                <!-- <div class="full-name">
+                    <h3><php echo $user_name; ?></h3>
+                    <h5><php echo $email; ?></h5>
+
+                </div> -->
+            </div>
+            <div class="manage">
+                <a href=""><h4>Manage Account</h4></a>
+            </div>
+            <div class="logout-btn">
+                <button class="btn"><a href="../view/homepage_before.view.php">Logout</a></button>
+            </div>
+        </div>
+    </form>
 
     <script src="../javaScript/shopping.js"></script>
 
