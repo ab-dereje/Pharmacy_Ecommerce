@@ -37,6 +37,28 @@ function PageTransitions() {
         })
     });
 
+    const update_btn = document.querySelectorAll(".btn-update");
+    update_btn.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var productId = this.getAttribute('data');
+            var quantityInput = this.parentNode.parentNode.querySelector('td:nth-child(3) input[name="quantity"]');
+            if (quantityInput !== null) {
+                var quantity = quantityInput.value;
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '../controller/updateCart.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                        console.log(xhr.responseText);
+                    }
+                };
+                xhr.send('product_id=' + productId + '&quantity=' + quantity);
+                // console.log(xhr.send('product_id=' + productId + '&quantity=' + quantity));
+            } else {
+                console.log("Error: quantity input not found");
+            }
+        });
+    });
 
 
 

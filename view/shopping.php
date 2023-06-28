@@ -57,6 +57,7 @@
                     <th class="th">prescription</th>
                     <th class="th">payment</th>
                     <th class="th">Delete</th>
+                    <th class="th">Update</th>
                 </tr>
             </thead>
             <tbody>
@@ -71,10 +72,11 @@
                 <tr>
                     <td class="td" ><?php echo $row['med_id'] ; ?></td>
                     <td class="td"><?php echo $row['med_name']; ?></td>
-                    <td class="td"><input name="quantity" value="1"></td>
+                    <td class="td"><input name="quantity" value="<?php echo $row['quantity'] ?>"></td>
                     <td class="td"><?php echo $row['prescription']; ?></td>
                     <td class="td"><?php echo $row['price']; ?></td>
                     <td class="td"><button class="btn" ><i data="<?php echo $med_id; ?>" class='bx bx-message-alt-minus'></i></button></td>
+                    <td class="td"><button class="btn-update" data="<?php echo $med_id; ?>">update</button></td>
                 </tr>
 
                  <?php   } ?>
@@ -132,19 +134,19 @@
         </div>
         
     </div>
-    <form action="../controller/logout.php" method="POST" novalidate>
+    <!-- <form action="../controller/logout.php" method="POST" novalidate>
         <div class="profile">
             <div class="info">
                 <div class="img-profile">
 
                 </div>
                 <?php echo $div1; ?>
-                <!-- <div class="full-name">
+                <div class="full-name">
                     <h3><php echo $user_name; ?></h3>
                     <h5><php echo $email; ?></h5>
 
-                </div> -->
-            </div>
+                </div> 
+             </div> 
             <div class="manage">
                 <a href=""><h4>Manage Account</h4></a>
             </div>
@@ -152,7 +154,7 @@
                 <button class="btn"><a href="../view/homepage_before.view.php">Logout</a></button>
             </div>
         </div>
-    </form>
+    </form> -->
 
     <script src="../javaScript/shopping.js"></script>
 
