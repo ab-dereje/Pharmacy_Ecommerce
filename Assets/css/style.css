@@ -50,6 +50,10 @@ body .content .container label {
   width: fit-content;
   font-size: larger;
 }
+body .content .container .pass {
+  position: relative;
+  top: 0.25rem;
+}
 body .content .container input {
   position: relative;
   width: 20rem;
@@ -122,6 +126,13 @@ body .content .container .incorect {
   position: relative;
   bottom: 14rem;
   font-size: 15px;
-  margin-right: 4rem;
+  margin-left: 2.5rem;
+  color: red;
+}
+body .content .container .incorect-email {
+  position: relative;
+  bottom: 20.25rem;
+  font-size: 15px;
+  margin-right: 1rem;
   color: red;
 }/*# sourceMappingURL=style.css.map */

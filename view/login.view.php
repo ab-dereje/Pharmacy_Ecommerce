@@ -1,6 +1,19 @@
 <?php
 require_once("../controller/login.php");
 
+
+if (isset($_GET['div'])) {
+    $div = $_GET['div'];
+} else {
+    $div = "";
+}
+
+if (isset($_GET['div1'])) {
+    $div1 = $_GET['div1'];
+} else {
+    $div1 = "";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +56,8 @@ require_once("../controller/login.php");
                     <p>Or</p>
                     <a href="./index.php" class="Signup">Sign Up</a>
                 </div>
-                <?php var_dump($div); ?>
+                <?php echo $div; ?>
+                <?php echo $div1; ?>
             </div>
         </div>
     </form>

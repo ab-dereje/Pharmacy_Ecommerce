@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $result = $conn->query($sql);
     $user = $result->fetch_assoc();
     // $user[]
-    $div="";
+    
     
     if($user){
         if (password_verify($_POST["password"], $user["password"])){
@@ -26,14 +26,16 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             exit;
         }
         else{
-            $div.="<label class='incorect'>try again</label>";
-            header("Location:../view/login.view.php");
+            var_dump("hsdhj");
+            $div="<label class='incorect'>incorrect password try again</label>";
+            header("Location:../view/login.view.php?div=" . urlencode($div));
             
     
         }
     }else{
-        $div.="<label class='incorect'>try again</label>";
-        header("../view/login.view.php");
+        var_dump("sjjdskh");
+        $div1="<label class='incorect-email'>email doesnot exist</label>";
+        header("Location:../view/login.view.php?div1=" . urlencode($div1));
 
     }
 }

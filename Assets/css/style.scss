@@ -56,6 +56,10 @@ body {
                 width: fit-content;
                 font-size: larger;
             }
+            .pass {
+                position: relative;
+                top: 0.25rem;
+            }
             input {
                 position: relative;
                 width: 20rem;
@@ -136,7 +140,14 @@ body {
                 position: relative;
                 bottom: 14rem;
                 font-size: 15px;
-                margin-right: 4rem;
+                margin-left: 2.5rem;
+                color: red;
+            }
+            .incorect-email {
+                position: relative;
+                bottom: 20.25rem;
+                font-size: 15px;
+                margin-right: 1rem;
                 color: red;
             }
         }
