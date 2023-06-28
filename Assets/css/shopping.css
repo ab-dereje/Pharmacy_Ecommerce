@@ -110,6 +110,14 @@ body .shop .table .td .btn .bx {
   background: none;
   border: none;
 }
+body .shop .table .td .btn-update {
+  background-color: rgb(69, 69, 236);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  height: 1.5rem;
+  width: 3.5rem;
+}
 body .shop .pay-btn {
   margin-top: 1rem;
   margin-left: 22rem;

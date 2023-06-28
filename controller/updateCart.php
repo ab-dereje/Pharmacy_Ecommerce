@@ -7,7 +7,7 @@
         $conn = require_once('../model/database.php');
         $sql = "UPDATE Shopping SET quantity = '{$quantity}' WHERE med_id = '{$product_id}'";
         $result= mysqli_query($conn, $sql);
-        // header("Location: ../view/shopping.php");
+        header("Location: ../view/shopping.php");
     };
-
+    
 ?>

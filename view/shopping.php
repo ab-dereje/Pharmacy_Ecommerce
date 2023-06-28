@@ -64,7 +64,7 @@
                 <?php
                     $conn =require_once('../model/database.php');
                     $query1 = mysqli_query($conn,"select * from Shopping");
-                    $query3 = mysqli_query($conn,"select * from Product");
+                    
                     $query2 = mysqli_query($conn,"select * from User");
                     while($row=mysqli_fetch_array($query1)){
                         $med_id=$row['med_id'];
@@ -75,19 +75,27 @@
                     <td class="td"><input name="quantity" value="<?php echo $row['quantity'] ?>"></td>
                     <td class="td"><?php echo $row['prescription']; ?></td>
                     <td class="td"><?php echo $row['price']; ?></td>
+                    
                     <td class="td"><button class="btn" ><i data="<?php echo $med_id; ?>" class='bx bx-message-alt-minus'></i></button></td>
+                    <form action="../controller/transaction.php" method="POST">
                     <td class="td"><button class="btn-update" data="<?php echo $med_id; ?>">update</button></td>
+                    </form>
                 </tr>
 
                  <?php   } ?>
                 
             </tbody>
         </table>
+        
         <div class="pay-btn">
             <button class="proced-pay">Next</button>
         </div>
     </div>
     <div class="Billing">
+        <?php
+            // 
+            $query3 = mysqli_query($conn,"select * from Shopping");
+        ?>
         <button class="close"><i class='bx bx-window-close'></i></button>
         <div class="container">
             <div class="fill-info">
@@ -109,11 +117,13 @@
                     <tbody>
                         <?php
                             // $conn =require_once('../model/database.php');
+                            $sum=0;
                             while($row=mysqli_fetch_array($query3)){
                         ?> 
                         <tr>
                             <td class="td"><?php echo $row['med_name']; ?></td>
-                            <td class="td"><?php echo $row['price']; ?></td>
+                            <td class="td"><?php echo ($row['price']*$row['quantity']); ?>$</td>
+                            <?php $sum+=($row['price']*$row['quantity']);?>
                         </tr>
                         
 
@@ -121,13 +131,13 @@
 
                         <tr>
                             <td class="td">Total</td>
-                            <td class="td"> ?</td>
+                            <td class="td"> <?php echo $sum; ?>$</td>
                         </tr>
                         
                     </tbody>
                 </table>
                 <div class="payment-method">
-                    <label class="telebirr">Payment is through Telebirr !</label>
+                    <label class="telebirr">Payment is through Chapa !</label>
                     <button class="payment" >PLACE ORDER</button>
                 </div>
             </div>
@@ -140,7 +150,7 @@
                 <div class="img-profile">
 
                 </div>
-                <?php echo $div1; ?>
+                
                 <div class="full-name">
                     <h3><php echo $user_name; ?></h3>
                     <h5><php echo $email; ?></h5>
