@@ -15,11 +15,11 @@ if(strlen($_POST["password"])<8){
 }
 
 if(! preg_match("/[a-z]/i", $_POST["password"])){
-    die("password must contain st least one letter");
+    die("password must contain at least one letter");
 }
 
 if(! preg_match("/[0-9]/i", $_POST["password"])){
-    die("password must contain st least one number");
+    die("password must contain at least one number");
 }
 
 if($_POST["password"] !== $_POST["cPassword"]){

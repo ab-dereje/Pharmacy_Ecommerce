@@ -43,12 +43,16 @@ body {
                 outline: none;
                 padding: 2px 15px;
             }
-            i {
+            .search_icon {
                 position: relative;
-                bottom: 1.75rem;
-                right: 2rem;
+                background-color: white;
+                border: none;
+                bottom: 1.8rem;
                 left: 25rem;
-                font-size: large;
+                i {
+                    bottom: 1.75rem;
+                    font-size: large;
+                }
             }
         }
         .nav-bar {

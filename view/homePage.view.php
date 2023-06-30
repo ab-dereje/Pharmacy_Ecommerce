@@ -1,6 +1,6 @@
 <?php
 
-require_once("../controller/home.php");
+require_once("../controller/search_bar.php");
 require_once("../controller/profile.php");
 ?>
 
@@ -27,8 +27,11 @@ require_once("../controller/profile.php");
         
 
         <div class="search">
-            <input class="search-bar" placeholder="search" type="text">
-            <i class='bx bx-search-alt-2'></i>
+            <form action="../controller/search_bar.php" method="POST">
+                <input class="search-bar" name="search" placeholder="search" type="text">
+                <button type="submit" class="search_icon"><i class='bx bx-search-alt-2'></i></button>
+            </form>
+            
         </div>
         <div class="nav-bar">
 

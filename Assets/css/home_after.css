@@ -47,11 +47,15 @@ body .header-content .search .search-bar {
   outline: none;
   padding: 2px 15px;
 }
-body .header-content .search i {
+body .header-content .search .search_icon {
   position: relative;
-  bottom: 1.75rem;
-  right: 2rem;
+  background-color: white;
+  border: none;
+  bottom: 1.8rem;
   left: 25rem;
+}
+body .header-content .search .search_icon i {
+  bottom: 1.75rem;
   font-size: large;
 }
 body .header-content .nav-bar {

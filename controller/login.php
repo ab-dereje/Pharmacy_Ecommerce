@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     if($user){
         if (password_verify($_POST["password"], $user["password"])){
             session_start();
-            //$_SESSION["user_email"]= ["email"=>$user['email']];
+            
             $_SESSION["user"] = ["email"=>$user['email'], "name"=>$user['name']];
             // var_dump($_SESSION["user_email"]['email']);
             header("Location: ../view/homePage.view.php");
