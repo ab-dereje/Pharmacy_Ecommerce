@@ -76,7 +76,7 @@
                     <td class="td"><?php echo $row['prescription']; ?></td>
                     <td class="td"><?php echo $row['price']; ?></td>
                     
-                    <td class="td"><button class="btn" ><i data="<?php echo $med_id; ?>" class='bx bx-message-alt-minus'></i></button></td>
+                    <td class="td"><button class="btn" data="<?php echo $med_id; ?>" >Delete</button></td>
                     <form action="../controller/transaction.php" method="POST">
                     <td class="td"><button class="btn-update" data="<?php echo $med_id; ?>">update</button></td>
                     </form>
