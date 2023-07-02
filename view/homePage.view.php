@@ -40,7 +40,7 @@ require_once("../controller/profile.php");
                     <a href="#home" class="link">home</a>
                     <a href="#about" class="link">about</a>
                     <a href="" class="link">services</a>
-                    <a href="./shopping.php" class="link"><i class='bx bx-cart'></i></a>
+                    <a href="../view/shopping.php" class="link"><i class='bx bx-cart'></i><label class="number">0</label></a>
                 </div>
             </nav>
             <div class="menu-icon">
@@ -114,7 +114,7 @@ require_once("../controller/profile.php");
         </div>
         <div class="social-media">
             <div>
-                <h3>social media-links</h3>
+                <h3>Keep updated</h3>
                 <!-- <h4>contact us</h4> -->
                 <a href=""><i class='bx bxl-facebook'></i></a>
                 <a href=""><i class='bx bxl-instagram' ></i></a>

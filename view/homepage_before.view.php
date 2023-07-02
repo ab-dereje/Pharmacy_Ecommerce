@@ -68,7 +68,7 @@
             <p>Subscribe to the one source website <br> receive a 10% discount</p>
         </div>
         <div class="get-button">
-            <button class="btn-home">Get more</button>
+            <a href="./login.view.php"><button class="btn-home">Get more</button></a>
         </div>
     </div>
     <div class="about" id="about">

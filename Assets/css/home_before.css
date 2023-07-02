@@ -175,6 +175,9 @@ body .home .get-button {
   padding-top: 2rem;
   padding-bottom: 8rem;
 }
+body .home .get-button a {
+  text-decoration: none;
+}
 body .home .get-button .btn-home {
   width: 15rem;
   height: 2.5rem;

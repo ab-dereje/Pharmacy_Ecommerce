@@ -65,6 +65,13 @@ body .header-content .nav-bar {
   width: 30rem;
   justify-content: space-between;
 }
+body .header-content .nav-bar .number {
+  color: wheat;
+  font-size: 15px;
+  position: relative;
+  bottom: 1rem;
+  right: 0.5rem;
+}
 body .header-content .nav-bar .menu-icon {
   margin-top: 0.5rem;
   width: -moz-fit-content;
@@ -77,6 +84,7 @@ body .header-content .nav-bar .menu-icon .menu-profile {
   font-size: 2.5rem;
   background-color: #576c7c;
   border: none;
+  color: white;
 }
 body .header-content .nav-bar div {
   display: flex;
