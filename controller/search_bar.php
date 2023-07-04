@@ -12,6 +12,12 @@
 
 $conn =require_once('../model/database.php');
 $divs = "";
+//number of rows in database
+
+$query = "SELECT COUNT(*) FROM Shopping";
+$res= mysqli_query($conn, $query);
+$row = mysqli_fetch_row($res);
+$count = $row[0];
 // Check if search term is set
 if(isset($_POST['search'])) {
     $searchbar = $_POST['search'];

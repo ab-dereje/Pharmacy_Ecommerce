@@ -42,25 +42,28 @@
             <div class="pro-detail">
                 <div class="pro1"></div>
                 <p class="first-price">100$</p>
+                <p class='product-name'>Adderal</p>
                 <div class="second-price">
                     <p>90$</p>
-                    <button class="buy-btn">Buy</button>
+                    <button class="buy-btn"><a href="../view/login.view.php">Buy</a></button>
                 </div>
             </div>
             <div class="pro-detail">
                 <div class="pro2"></div>
                 <p class="first-price">100$</p>
+                <p class='product-name'>Tylenol</p>
                 <div class="second-price">
                     <p>90$</p>
-                    <button class="buy-btn">Buy</button>
+                    <button class="buy-btn"><a href="../view/login.view.php">Buy</a></button>
                 </div>
             </div>
             <div class="pro-detail">
                 <div class="pro3"></div>
                 <p class="first-price">100$</p>
+                <p class='product-name'>Zantac</p>
                 <div class="second-price">
                     <p>90$</p>
-                    <button class="buy-btn">Buy</button>
+                    <button class="buy-btn"><a href="../view/login.view.php">Buy</a></button>
                 </div>
             </div>
         </div>
@@ -78,7 +81,7 @@
                 <h4>Company Information</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste harum culpa consectetur dolor, necessitatibus dignissimos eveniet, veritatis, nobis odio optio sunt veniam! Nisi veritatis voluptates nemo nam officiis nulla atque?</p>
                 <span class="more">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste nostrum dolore quae totam veritatis recusandae, doloremque sequi libero. Autem, distinctio. Saepe accusamus, iste reiciendis repellat suscipit praesentium commodi maiores.</p>
+                    <p></br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste nostrum dolore quae totam veritatis recusandae, doloremque sequi libero. Autem, distinctio. Saepe accusamus, iste reiciendis repellat suscipit praesentium commodi maiores.</p>
                 </span>
                 <button class="more-btn">Read More</button>
             </div>
@@ -94,7 +97,7 @@
         </div>
         <div class="social-media">
             <div>
-                <h3>social media-links</h3>
+                <h3>Keep updated</h3>
                 <!-- <h4>contact us</h4> -->
                 <a href=""><i class='bx bxl-facebook'></i></a>
                 <a href=""><i class='bx bxl-instagram' ></i></a>
@@ -103,6 +106,8 @@
 
         </div>
     </div>
+
+    <script src="../javaScript/homepage_before.js"></script>
 </body>
 
 

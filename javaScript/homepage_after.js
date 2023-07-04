@@ -13,7 +13,8 @@ function PageTransitions() {
         } else {
             profile.style.display = "none";
         }
-    })
+    });
+
 
 }
 PageTransitions();

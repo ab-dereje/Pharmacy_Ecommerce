@@ -4,8 +4,9 @@
 }
 
 body {
-    background-image: url(../img/cesar-couto-sKuVjm0xyLY-unsplash.jpg);
+    // background-image: url(../img/cesar-couto-sKuVjm0xyLY-unsplash.jpg);
     background-position: center;
+    background-color: #F8F1F1;
     background-repeat: no-repeat;
     background-size: cover;
     height: fit-content;
@@ -15,9 +16,10 @@ body {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        height: 4rem;
+        height: 4.5rem;
+        z-index: 2;
         // background-color: rgb(192, 192, 192);
-        background-color: #576c7c;
+        background-color: #19456B;
         .img-log {
             margin-top: 0.5rem;
             height: 3rem;
@@ -108,79 +110,104 @@ body {
         }
     }
     .home {
-        padding-top: 6rem;
+        padding-top: 4rem;
         display: flex;
         flex-direction: column;
         .Products {
             display: flex;
             justify-content: space-around;
-            margin-left: 23rem;
-            margin-right: 23rem;
+            margin-left: 10rem;
+            margin-right: 10rem;
             padding-top: 4rem;
             .pro-detail {
+                background-color: #dfd3d3;
+                border-radius: 8px;
+                padding-bottom: 1rem;
+                box-shadow: 0px 5px 15px #19456B;
+                &:hover {
+                    scale: 1.01;
+                }
                 .first-price {
                     margin-top: 1rem;
                     margin-left: 10%;
-                    color: white;
-                    font-weight: 700;
+                    color: #11698E;
+                    font-weight: 500;
                     font-size: large;
                     width: fit-content;
                     text-decoration: line-through;
+                }
+                .product-name {
+                    position: relative;
+                    left: 10rem;
+                    bottom: 1.3rem;
+                    font-size: x-large;
+                    font-weight: 700;
+                    color: #11698E;
+                    width: fit-content;
                 }
                 .second-price {
                     display: flex;
                     justify-content: space-between;
                     margin-top: 1rem;
                     margin-left: 10%;
-                    color: white;
-                    font-weight: 700;
+                    color: #11698E;
+                    font-weight: 500;
                     font-size: large;
                     .buy-btn {
                         border-radius: 3px;
                         box-shadow: 0px 5px 10px green;
                         background-color: rgb(27, 194, 27);
                         border: rgb(27, 194, 27);
-                        width: 3rem;
+                        width: 5rem;
+                        height: 2rem;
                         color: white;
+                        font-size: large;
+                        position: relative;
+                        right: 1rem;
+                        z-index: 0;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
                     }
                 }
                 .pro1 {
-                    height: 10rem;
-                    width: 10rem;
-                    background-color: white;
-                    border-radius: 10px;
+                    height: 14rem;
+                    width: 16rem;
+                    // background-color: #11698E;
+                    border-radius: 10px 10px 0px 0px;
                     background-image: url("../img/aderal.webp");
                     background-position: center;
-                    background-size: contain;
+                    background-size: cover;
                     background-repeat: no-repeat;
-                    box-shadow: 0px 5px 15px whitesmoke;
+                    // box-shadow: 0px 5px 15px #19456B;
                 }
                 .pro2 {
-                    height: 10rem;
-                    width: 10rem;
-                    background-color: white;
-                    border-radius: 10px;
+                    height: 14rem;
+                    width: 16rem;
+                    background-color: #11698E;
+                    border-radius: 10px 10px 0px 0px;
                     background-image: url("../img/tylenol.webp");
                     background-position: center;
-                    background-size: contain;
+                    background-size: cover;
                     background-repeat: no-repeat;
-                    box-shadow: 0px 5px 15px whitesmoke;
+                    //box-shadow: 0px 5px 15px #19456B;
                 }
                 .pro3 {
-                    height: 10rem;
-                    width: 10rem;
-                    background-color: white;
-                    border-radius: 10px;
+                    height: 14rem;
+                    width: 16rem;
+                    background-color: #11698E;
+                    border-radius: 10px 10px 0px 0px;
                     background-image: url("../img/zantac.jpg");
                     background-position: center;
-                    background-size: contain;
+                    background-size: cover;
                     background-repeat: no-repeat;
-                    box-shadow: 0px 5px 15px whitesmoke;
+                    //box-shadow: 0px 5px 15px #19456B;
                 }
             }
         }
         .promotion {
-            color: white;
+            color: #11698E;
             display: block;
             justify-content: center;
             text-align: center;
@@ -198,23 +225,28 @@ body {
             }
             .btn-home {
                 width: 15rem;
-                height: 2.5rem;
-                font-size: larger;
+                height: 3rem;
+                font-size: x-large;
                 border-radius: 20px;
                 outline: none;
-                background-color: rgb(0, 153, 255);
+                background-color: #19456B;
+                //background-color: rgb(0, 153, 255);
                 color: white;
-                border: solid rgb(0, 153, 255);
-                box-shadow: 0px 5px 15px rgb(0, 89, 255);
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    background-color: #11698E;
+                }
+                //box-shadow: 0px 5px 15px rgb(0, 89, 255);
             }
         }
     }
     .about {
-        padding-top: 5rem;
+        padding-top: 4.5rem;
         h1 {
             display: flex;
             justify-content: center;
-            color: white;
+            color: #19456B;
             font-weight: 800;
         }
         .about-container {
@@ -225,8 +257,10 @@ body {
             .company-info {
                 h4 {
                     padding-bottom: 1rem;
+                    color: #19456B;
                 }
-                color: black;
+                color: #11698E;
+                font-size: large;
                 margin-right: 1rem;
                 margin-bottom: 2rem;
                 background-color: white;
@@ -234,26 +268,32 @@ body {
                 height: fit-content;
                 padding: 1rem;
                 border-radius: 8px;
-                box-shadow: 0px 5px 15px white;
+                box-shadow: 0px 5px 15px #11698E;
                 span {
                     display: none;
                 }
                 .more-btn {
-                    margin: 1rem;
+                    margin: 0.5rem;
                     padding: 0.6rem;
-                    font-size: small;
+                    font-size: medium;
                     font-weight: 600;
                     border-radius: 25px;
-                    background-color: rgb(0, 153, 255);
+                    background-color: #19456B;
                     border: none;
                     color: white;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #11698E;
+                    }
                 }
             }
             .company-misssion {
                 h4 {
                     padding-bottom: 1rem;
+                    color: #19456B;
                 }
-                color: black;
+                color: #11698E;
+                font-size: large;
                 margin-bottom: 2rem;
                 margin-right: 1rem;
                 margin-left: 1rem;
@@ -263,14 +303,16 @@ body {
                 height: 9.5rem;
                 padding: 1rem;
                 border-radius: 8px;
-                box-shadow: 0px 5px 15px white;
+                box-shadow: 0px 5px 15px #11698E;
             }
         }
         .privacy-policy {
             h4 {
                 padding-bottom: 1rem;
+                color: #19456B;
             }
-            color: black;
+            color: #11698E;
+            font-size: large;
             margin-bottom: 2rem;
             margin-left: 30%;
             background-color: white;
@@ -278,7 +320,7 @@ body {
             height: fit-content;
             padding: 1rem;
             border-radius: 8px;
-            box-shadow: 0px 5px 15px white;
+            box-shadow: 0px 5px 15px #11698E;
         }
         .social-media {
             display: flex;

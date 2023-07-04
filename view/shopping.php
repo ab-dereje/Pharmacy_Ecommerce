@@ -1,4 +1,11 @@
+<?php
+session_start();
 
+if(!isset($_SESSION['user'])){
+    header('Location: login.view.php');
+    die();
+}
+?>
 
 
 <!DOCTYPE html>
@@ -48,7 +55,7 @@
             </div>
         </div> -->
 
-        <table class="table" border="1" height="300" width="600">
+        <table class="table" border="1">
             <thead class="thead">
                 <tr class="tr">
                     <th class="th">medicine_id</th>
@@ -69,7 +76,7 @@
                     while($row=mysqli_fetch_array($query1)){
                         $med_id=$row['med_id'];
                 ?> 
-                <tr>
+                
                     <td class="td" ><?php echo $row['med_id'] ; ?></td>
                     <td class="td"><?php echo $row['med_name']; ?></td>
                     <td class="td"><input name="quantity" value="<?php echo $row['quantity'] ?>"></td>
@@ -88,7 +95,7 @@
         </table>
         
         <div class="pay-btn">
-            <button class="proced-pay">Next</button>
+            <button class="proced-pay">proceed</button>
         </div>
     </div>
     <div class="Billing">

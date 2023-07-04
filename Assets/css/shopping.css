@@ -17,7 +17,7 @@ body .header-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #576c7c;
+  background-color: #19456B;
   height: 4rem;
   width: 100%;
 }
@@ -83,34 +83,41 @@ body .header-content .nav-bar div .link {
 body .shop {
   display: flex;
   flex-direction: column;
-  padding-top: 5rem;
   min-height: 100vh;
   justify-content: center;
+  background-color: #F8F1F1;
 }
 body .shop .table {
+  border-collapse: collapse;
   color: black;
   margin-left: 20rem;
+  width: 60%;
 }
-body .shop .table .th {
+body .shop .table thead tr .th {
+  padding: 0.5rem;
+  background-color: #11698e;
+}
+body .shop .table tbody tr:hover {
+  background-color: #e6dada;
+}
+body .shop .table tbody tr .td {
+  height: 2rem;
   padding: 0.5rem;
 }
-body .shop .table .td {
-  padding: 1rem;
-}
-body .shop .table .td input {
+body .shop .table tbody tr .td input {
   width: 2rem;
 }
-body .shop .table .td .btn {
+body .shop .table tbody tr .td .btn {
   background: none;
   border: none;
 }
-body .shop .table .td .btn .bx {
+body .shop .table tbody tr .td .btn .bx {
   font-size: large;
   color: black;
   background: none;
   border: none;
 }
-body .shop .table .td .btn {
+body .shop .table tbody tr .td .btn {
   background-color: rgb(238, 77, 28);
   color: white;
   border-radius: 4px;
@@ -118,7 +125,7 @@ body .shop .table .td .btn {
   height: 1.5rem;
   width: 3.5rem;
 }
-body .shop .table .td .btn-update {
+body .shop .table tbody tr .td .btn-update {
   background-color: rgb(69, 69, 236);
   color: white;
   border-radius: 4px;
@@ -133,11 +140,15 @@ body .shop .pay-btn {
 body .shop .pay-btn .proced-pay {
   background-color: rgb(57, 179, 57);
   color: white;
-  border-radius: 8px;
+  border-radius: 5px;
+  font-size: large;
   height: 2.5rem;
-  width: 4rem;
+  width: 5rem;
   border: none;
-  box-shadow: 0px 5px 15px rgb(99, 201, 99);
+  cursor: pointer;
+}
+body .shop .pay-btn .proced-pay:hover {
+  background-color: #16C79A;
 }
 body .Billing {
   margin-top: 10rem;
@@ -149,6 +160,7 @@ body .Billing {
   padding: 0.5rem;
   border: solid;
   margin-left: 10rem;
+  border-color: #11698e;
 }
 body .Billing .close {
   width: -moz-fit-content;
@@ -157,12 +169,18 @@ body .Billing .close {
   margin-left: 97%;
   background: none;
   border: none;
+  color: red;
+}
+body .Billing .close:hover {
+  background-color: red;
+  color: white;
 }
 body .Billing .close .bx {
   font-size: x-large;
   font-weight: 700;
 }
 body .Billing .container {
+  border-color: #11698e;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
@@ -170,6 +188,7 @@ body .Billing .container {
   height: 100%;
 }
 body .Billing .fill-info {
+  border-color: #11698e;
   display: flex;
   flex-direction: column;
   border: solid 1px;
@@ -203,13 +222,22 @@ body .Billing .order {
 body .Billing .order .table {
   height: -moz-fit-content;
   height: fit-content;
+  border-collapse: collapse;
   width: 15rem;
   margin-bottom: 1rem;
   text-align: center;
 }
+body .Billing .order .table th {
+  color: white;
+  background-color: #11698e;
+}
+body .Billing .order .table tr:hover {
+  background-color: #e6dada;
+}
 body .Billing .order .payment-method {
   display: flex;
   flex-direction: column;
+  color: #11698e;
 }
 body .Billing .order .payment-method .telebirr {
   margin-bottom: 1rem;
@@ -218,9 +246,13 @@ body .Billing .order .payment-method .telebirr {
 }
 body .Billing .order .payment-method .payment {
   height: 2.5rem;
-  background-color: rgb(6, 6, 90);
+  background-color: #19456B;
   color: white;
   border-radius: 4px;
+  font-size: medium;
+}
+body .Billing .order .payment-method .payment:hover {
+  background-color: #11698e;
 }
 
 footer {

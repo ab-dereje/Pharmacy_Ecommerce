@@ -36,6 +36,7 @@ body .content .container {
   background-color: white;
 }
 body .content .container .bx-user {
+  color: #11698E;
   position: relative;
   font-size: 7rem;
   bottom: 2rem;
@@ -69,14 +70,17 @@ body .content .container .user-icon i {
   position: relative;
   right: 11rem;
   bottom: 11rem;
+  color: #11698E;
 }
 body .content .container .key {
+  color: #11698E;
   position: relative;
   right: 11rem;
   bottom: 4rem;
   font-size: 1.25rem;
 }
 body .content .container .eye-icon {
+  color: #11698E;
   position: relative;
   left: 10.5rem;
   bottom: 1.7rem;
@@ -88,7 +92,7 @@ body .content .container .forgot {
   font-size: medium;
   margin-bottom: 0.5rem;
   text-decoration: none;
-  color: black;
+  color: #11698E;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -109,18 +113,24 @@ body .content .container .btn-container .Lbtn {
   width: 22rem;
   left: 1rem;
   height: 2.5rem;
-  background-color: #1c1c1c;
+  background-color: #19456B;
   color: #fff;
-  font-size: large;
+  font-size: larger;
   margin-bottom: 5px;
+  border: none;
+  cursor: pointer;
+}
+body .content .container .btn-container .Lbtn:hover {
+  background-color: #11698E;
 }
 body .content .container .btn-container p {
   padding: 3px;
+  color: #19456B;
 }
 body .content .container .btn-container .Signup {
   position: relative;
   text-decoration: none;
-  color: black;
+  color: #19456B;
 }
 body .content .container .incorect {
   position: relative;

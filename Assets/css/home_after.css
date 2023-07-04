@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(../img/cesar-couto-sKuVjm0xyLY-unsplash.jpg);
+  background-color: #F8F1F1;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,8 +17,8 @@ body .header-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #576c7c;
-  height: 4rem;
+  background-color: #19456B;
+  height: 4.5rem;
   z-index: 3;
 }
 body .header-content .img-log {
@@ -82,7 +82,7 @@ body .header-content .nav-bar .menu-icon {
 }
 body .header-content .nav-bar .menu-icon .menu-profile {
   font-size: 2.5rem;
-  background-color: #576c7c;
+  background-color: #19456B;
   border: none;
   color: white;
 }
@@ -105,29 +105,36 @@ body .home {
   padding-top: 4rem;
 }
 body .home .Products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-around;
-  margin-left: 20rem;
-  margin-right: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 5rem;
+  margin-left: 13rem;
+  margin-right: 10rem;
 }
 body .home .Products .pro-detail {
+  width: 16rem;
+  margin: 0;
   margin-top: 3rem;
+  background-color: #dfd3d3;
+  border-radius: 8px;
+  padding-bottom: 1rem;
+  box-shadow: 0px 5px 15px #19456B;
 }
 body .home .Products .pro-detail .product-name {
   position: relative;
-  left: 5.5rem;
+  left: 9.5rem;
   bottom: 1.25rem;
   font-weight: 800;
-  font-size: large;
-  color: wheat;
+  font-size: larger;
+  color: #11698E;
   width: -moz-fit-content;
   width: fit-content;
 }
 body .home .Products .pro-detail .first-price {
   margin-top: 1rem;
   margin-left: 10%;
-  color: white;
+  color: #11698E;
   font-weight: 700;
   font-size: large;
   width: -moz-fit-content;
@@ -137,53 +144,38 @@ body .home .Products .pro-detail .first-price {
 body .home .Products .pro-detail .second-price {
   display: flex;
   justify-content: space-between;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-left: 10%;
-  color: white;
+  color: #11698E;
   font-weight: 700;
   font-size: large;
 }
 body .home .Products .pro-detail .second-price .buy-btn {
-  margin-right: 5rem;
   border-radius: 3px;
   box-shadow: 0px 5px 10px green;
   background-color: rgb(27, 194, 27);
   border: rgb(27, 194, 27);
-  width: 3rem;
+  width: 5rem;
+  height: 2rem;
   color: white;
+  font-size: large;
+  position: relative;
+  right: 1rem;
+  z-index: 0;
+  cursor: pointer;
+}
+body .home .Products .pro-detail .second-price .buy-btn:hover {
+  background-color: rgb(77, 219, 77);
 }
 body .home .Products .pro-detail .pro1 {
-  height: 10rem;
-  width: 10rem;
+  height: 14rem;
+  width: 16rem;
   background-color: white;
-  border-radius: 10px;
-  background-image: url("../img/aderal.webp");
+  border-radius: 10px 10px 0px 0px;
+  background-image: "";
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0px 5px 15px whitesmoke;
-}
-body .home .Products .pro-detail .pro2 {
-  height: 10rem;
-  width: 10rem;
-  background-color: white;
-  border-radius: 10px;
-  background-image: url("../img/tylenol.webp");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  box-shadow: 0px 5px 15px whitesmoke;
-}
-body .home .Products .pro-detail .pro3 {
-  height: 10rem;
-  width: 10rem;
-  background-color: white;
-  border-radius: 10px;
-  background-image: url("../img/zantac.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  box-shadow: 0px 5px 15px whitesmoke;
 }
 body .home .promotion {
   color: white;
@@ -217,7 +209,7 @@ body .about {
 body .about h1 {
   display: flex;
   justify-content: center;
-  color: white;
+  color: #19456B;
   font-weight: 800;
 }
 body .about .about-container {
@@ -227,7 +219,7 @@ body .about .about-container {
   margin-top: 4rem;
 }
 body .about .about-container .company-info {
-  color: black;
+  color: #11698E;
   margin-right: 1rem;
   margin-bottom: 2rem;
   background-color: white;
@@ -237,10 +229,11 @@ body .about .about-container .company-info {
   height: fit-content;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0px 5px 15px white;
+  box-shadow: 0px 5px 15px #11698E;
 }
 body .about .about-container .company-info h4 {
   padding-bottom: 1rem;
+  color: #19456B;
 }
 body .about .about-container .company-info span {
   display: none;
@@ -251,12 +244,16 @@ body .about .about-container .company-info .more-btn {
   font-size: small;
   font-weight: 600;
   border-radius: 25px;
-  background-color: rgb(0, 153, 255);
+  background-color: #19456B;
   border: none;
   color: white;
+  cursor: pointer;
+}
+body .about .about-container .company-info .more-btn:hover {
+  background-color: #11698E;
 }
 body .about .about-container .company-misssion {
-  color: black;
+  color: #11698E;
   margin-bottom: 2rem;
   margin-right: 1rem;
   margin-left: 1rem;
@@ -268,13 +265,14 @@ body .about .about-container .company-misssion {
   height: 9.5rem;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0px 5px 15px white;
+  box-shadow: 0px 5px 15px #11698E;
 }
 body .about .about-container .company-misssion h4 {
   padding-bottom: 1rem;
+  color: #19456B;
 }
 body .about .privacy-policy {
-  color: black;
+  color: #11698E;
   margin-bottom: 2rem;
   margin-left: 30%;
   background-color: white;
@@ -283,10 +281,11 @@ body .about .privacy-policy {
   height: fit-content;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0px 5px 15px white;
+  box-shadow: 0px 5px 15px #11698E;
 }
 body .about .privacy-policy h4 {
   padding-bottom: 1rem;
+  color: #19456B;
 }
 body .about .social-media {
   display: flex;

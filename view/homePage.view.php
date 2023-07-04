@@ -1,5 +1,11 @@
-<?php
 
+<?php
+session_start();
+
+if(!isset($_SESSION['user'])){
+    header('Location: login.view.php');
+    die();
+}
 require_once("../controller/search_bar.php");
 require_once("../controller/profile.php");
 ?>
@@ -40,7 +46,7 @@ require_once("../controller/profile.php");
                     <a href="#home" class="link">home</a>
                     <a href="#about" class="link">about</a>
                     <a href="" class="link">services</a>
-                    <a href="../view/shopping.php" class="link"><i class='bx bx-cart'></i><label class="number">0</label></a>
+                    <a href="../view/shopping.php" class="link"><i class='bx bx-cart'></i><label class="number">+<?php echo $count; ?></label></a>
                 </div>
             </nav>
             <div class="menu-icon">
@@ -84,12 +90,12 @@ require_once("../controller/profile.php");
             </div>
         <!-- </form> -->
         
-        <div class="promotion">
+        <!-- <div class="promotion">
             <p>Subscribe to the one source website <br> receive a 10% discount</p>
         </div>
         <div class="get-button">
             <button class="btn-home">Get more</button>
-        </div>
+        </div> -->
     </div>
     <div class="about" id="about">
         <h1>About</h1>
@@ -140,7 +146,7 @@ require_once("../controller/profile.php");
                 <a href=""><h4>Manage Account</h4></a>
             </div>
             <div class="logout-btn">
-                <button class="btn"><a href="../view/homepage_before.view.php">Logout</a></button>
+                <button class="btn" type="submit">Logout</button>
             </div>
         </div>
     </form>

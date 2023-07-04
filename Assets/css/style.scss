@@ -44,6 +44,7 @@ body {
             align-items: center;
             background-color: white;
             .bx-user {
+                color: #11698E;
                 position: relative;
                 font-size: 7rem;
                 bottom: 2rem;
@@ -75,14 +76,17 @@ body {
                 position: relative;
                 right: 11rem;
                 bottom: 11rem;
+                color: #11698E;
             }
             .key {
+                color: #11698E;
                 position: relative;
                 right: 11rem;
                 bottom: 4rem;
                 font-size: 1.25rem;
             }
             .eye-icon {
+                color: #11698E;
                 position: relative;
                 left: 10.5rem;
                 bottom: 1.7rem;
@@ -94,7 +98,7 @@ body {
                 font-size: medium;
                 margin-bottom: 0.5rem;
                 text-decoration: none;
-                color: black;
+                color: #11698E;
                 width: fit-content;
             }
             .btn-container {
@@ -112,11 +116,15 @@ body {
                     width: 22rem;
                     left: 1rem;
                     height: 2.5rem;
-                    // background-color: rgb(51, 255, 255);
-                    background-color: #1c1c1c;
+                    background-color: #19456B;
                     color: #fff;
-                    font-size: large;
+                    font-size: larger;
                     margin-bottom: 5px;
+                    border: none;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #11698E;
+                    }
                 }
                 //     .Cbtn {
                 //         position: relative;
@@ -129,11 +137,12 @@ body {
                 //     }
                 p {
                     padding: 3px;
+                    color: #19456B;
                 }
                 .Signup {
                     position: relative;
                     text-decoration: none;
-                    color: black;
+                    color: #19456B;
                 }
             }
             .incorect {
