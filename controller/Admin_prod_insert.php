@@ -34,6 +34,7 @@ if ($uploadOk == 0) {
 
 $path_to_photo = $target_file;
 
+
 $conn =require_once("../model/database.php");
 
 $sql = "INSERT INTO Product (med_name,description,type,prescription,price,url) 

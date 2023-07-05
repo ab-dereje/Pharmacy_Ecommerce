@@ -46,7 +46,7 @@ if (empty($_SESSION['user'])) {
             <div class="center">
                 <h1> Welcome <?php echo $_SESSION['user']; ?></h1>
                 <h2>Insert New Medicine </h2>
-                <form action="../../controller/Admin_prod_insert.php" method="post">
+                <form action="../../controller/Admin_prod_insert.php" method="post" enctype="multipart/form-data">
                     <div class="textField">
                         <input type="text" name="med_name" required placeholder="medicine name">
                         <input type="number" name="price" required placeholder="price">
@@ -55,7 +55,7 @@ if (empty($_SESSION['user'])) {
                         <input type="file" id="photo" name="photo">
                     </div>
                     <button type="submit">Insert</button>
-                </form>
+                </form>           
             </div>
         </div>  
    </body>
