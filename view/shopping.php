@@ -85,7 +85,7 @@ if(!isset($_SESSION['user'])){
                     
                     <td class="td"><button class="btn" data="<?php echo $med_id; ?>" >Delete</button></td>
                     <form action="../controller/transaction.php" method="POST">
-                    <td class="td"><button class="btn-update" data="<?php echo $med_id; ?>">update</button></td>
+                        <td class="td"><button class="btn-update" data="<?php echo $med_id; ?>">update</button></td>
                     </form>
                 </tr>
 
@@ -143,10 +143,12 @@ if(!isset($_SESSION['user'])){
                         
                     </tbody>
                 </table>
-                <div class="payment-method">
-                    <label class="telebirr">Payment is through Chapa !</label>
-                    <button class="payment" >PLACE ORDER</button>
-                </div>
+                <form action="../controller/payment.php" method="post">
+                    <div class="payment-method">
+                        <label class="telebirr">Payment is through Chapa !</label>
+                        <button class="payment" type="submit" >PLACE ORDER</button>
+                    </div>
+                </form>
             </div>
         </div>
         

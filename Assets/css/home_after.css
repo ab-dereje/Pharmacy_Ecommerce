@@ -123,10 +123,10 @@ body .home .Products .pro-detail {
 }
 body .home .Products .pro-detail .product-name {
   position: relative;
-  left: 9.5rem;
-  bottom: 1.25rem;
-  font-weight: 800;
-  font-size: larger;
+  left: 9rem;
+  bottom: 1.3rem;
+  font-size: x-large;
+  font-weight: 700;
   color: #11698E;
   width: -moz-fit-content;
   width: fit-content;
@@ -135,7 +135,7 @@ body .home .Products .pro-detail .first-price {
   margin-top: 1rem;
   margin-left: 10%;
   color: #11698E;
-  font-weight: 700;
+  font-weight: 500;
   font-size: large;
   width: -moz-fit-content;
   width: fit-content;
@@ -147,7 +147,7 @@ body .home .Products .pro-detail .second-price {
   margin-top: 1rem;
   margin-left: 10%;
   color: #11698E;
-  font-weight: 700;
+  font-weight: 500;
   font-size: large;
 }
 body .home .Products .pro-detail .second-price .buy-btn {
@@ -176,6 +176,9 @@ body .home .Products .pro-detail .pro1 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+body .home .Products .pro-detail .pro1:hover {
+  scale: 1.01;
 }
 body .home .promotion {
   color: white;

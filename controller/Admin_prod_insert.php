@@ -6,7 +6,7 @@ $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $med_name=$_POST["med_name"];
 $description=$_POST["description"];
 $types=$_POST["types"];
-$prescription=$_POST["prescription"];
+$prescription=$_POST["description"];
 $price =$_POST["price"];
 
 
@@ -41,8 +41,9 @@ $sql = "INSERT INTO Product (med_name,description,type,prescription,price,url)
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
+    
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
-
+  header("Location:../../view/Admin/admin.php");
 ?>
