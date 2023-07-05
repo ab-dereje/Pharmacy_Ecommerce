@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
     if($user == $userName){
         if ($pass == $password) {
            $_SESSION['login'] = true;
-           $_SESSION['user'] = $user; 
+           $_SESSION["user"] = ["email"=>$user['email'], "name"=>$user['name']];
            header("location: ../../view/Admin/admin.php"); 
         }
     //     else{

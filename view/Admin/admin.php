@@ -44,7 +44,7 @@ if (empty($_SESSION['user'])) {
             </div>
                 
             <div class="center">
-                <h1> Welcome <?php echo $_SESSION['user']; ?></h1>
+                <h1> Welcome Admin</h1>
                 <h2>Insert New Medicine </h2>
                 <form action="../../controller/Admin_prod_insert.php" method="post" enctype="multipart/form-data">
                     <div class="textField">
