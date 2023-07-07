@@ -89,6 +89,17 @@ ul li {
     color: #000;
 }
 
+
+/* .navbar li a:focus~span::before,
+.navbar li a:valid~span::before {
+    background-color: #000;
+} */
+
+
+/* .navbar li a:active::after {
+    background-color: #000;
+} */
+
 .search {
     padding-top: 5px;
     width: 330px;

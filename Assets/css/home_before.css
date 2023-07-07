@@ -90,7 +90,7 @@ body .header-content .nav-bar .log_acc a {
   font-weight: 700;
 }
 body .home {
-  padding-top: 4rem;
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -218,45 +218,44 @@ body .home .get-button .btn-home:hover {
   background-color: #11698E;
 }
 body .about {
-  padding-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  padding-top: 5rem;
+  margin-bottom: 2rem;
 }
 body .about h1 {
   display: flex;
   justify-content: center;
   color: #19456B;
   font-weight: 800;
+  margin-bottom: 3rem;
 }
-body .about .about-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 3rem;
-  margin-top: 4rem;
-}
-body .about .about-container .company-info {
+body .about .company-info {
   color: #11698E;
-  font-size: large;
-  margin-right: 1rem;
-  margin-bottom: 2rem;
+  margin-right: 3rem;
+  margin-bottom: 0.5rem;
+  margin-left: 3rem;
   background-color: white;
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0px 5px 15px #11698E;
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: 5px 0px 5px #11698E;
 }
-body .about .about-container .company-info h4 {
+body .about .company-info h4 {
   padding-bottom: 1rem;
   color: #19456B;
 }
-body .about .about-container .company-info span {
+body .about .company-info span {
   display: none;
 }
-body .about .about-container .company-info .more-btn {
-  margin: 0.5rem;
+body .about .company-info .more-btn {
+  margin: 1rem;
   padding: 0.6rem;
-  font-size: medium;
+  font-size: small;
   font-weight: 600;
   border-radius: 25px;
   background-color: #19456B;
@@ -264,55 +263,54 @@ body .about .about-container .company-info .more-btn {
   color: white;
   cursor: pointer;
 }
-body .about .about-container .company-info .more-btn:hover {
+body .about .company-info .more-btn:hover {
   background-color: #11698E;
 }
-body .about .about-container .company-misssion {
+body .about .company-misssion {
   color: #11698E;
-  font-size: large;
-  margin-bottom: 2rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
   background-color: white;
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  height: 9.5rem;
+  height: 12rem;
   padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0px 5px 15px #11698E;
+  box-shadow: 5px 0px 5px #11698E;
 }
-body .about .about-container .company-misssion h4 {
+body .about .company-misssion h4 {
   padding-bottom: 1rem;
   color: #19456B;
 }
 body .about .privacy-policy {
   color: #11698E;
-  font-size: large;
   margin-bottom: 2rem;
-  margin-left: 30%;
+  margin-left: 3rem;
+  margin-right: 3rem;
   background-color: white;
-  width: 40%;
+  width: -moz-fit-content;
+  width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0px 5px 15px #11698E;
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 5px 0px 5px #11698E;
 }
 body .about .privacy-policy h4 {
   padding-bottom: 1rem;
   color: #19456B;
 }
-body .about .social-media {
+body .social-media {
   display: flex;
   justify-content: end;
   margin: 3rem;
 }
-body .about .social-media h3 {
+body .social-media h3 {
   padding-bottom: 0.5rem;
 }
-body .about .social-media a {
+body .social-media a {
   margin-right: 1rem;
   font-size: larger;
   font-weight: 800;

@@ -12,7 +12,7 @@ if($pass1==$pass2){
 $sql="INSERT INTO user (fname,lname,email,pass) values ('$fname','$lname','$email','$pass1');";
 
 mysqli_query($con,$sql);
-header("location: ./create.php?signup=success");
+header("Location:../view/index.php");
 }
 
 header("location: ./create.php?signup=failed");

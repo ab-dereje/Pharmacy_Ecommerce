@@ -61,8 +61,8 @@ if(!isset($_SESSION['user'])){
                     <th class="th">medicine_id</th>
                     <th class="th">Name</th>
                     <th class="th">Quantity</th>
-                    <th class="th">prescription</th>
-                    <th class="th">payment</th>
+                    <th class="th">Description</th>
+                    <th class="th">price</th>
                     <th class="th">Delete</th>
                     <th class="th">Update</th>
                 </tr>
@@ -81,7 +81,7 @@ if(!isset($_SESSION['user'])){
                     <td class="td"><?php echo $row['med_name']; ?></td>
                     <td class="td"><input name="quantity" value="<?php echo $row['quantity'] ?>"></td>
                     <td class="td"><?php echo $row['prescription']; ?></td>
-                    <td class="td"><?php echo $row['price']; ?></td>
+                    <td class="td"><?php echo $row['price']; ?>$</td>
                     
                     <td class="td"><button class="btn" data="<?php echo $med_id; ?>" >Delete</button></td>
                     <form action="../controller/transaction.php" method="POST">

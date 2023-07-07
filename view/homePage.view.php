@@ -102,22 +102,27 @@ require_once("../controller/profile.php");
         <div class="about-container">
             <div class="company-info">
                 <h4>Company Information</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste harum culpa consectetur dolor, necessitatibus dignissimos eveniet, veritatis, nobis odio optio sunt veniam! Nisi veritatis voluptates nemo nam officiis nulla atque?</p>
+                <p>One Source Pharmacy is a locally owned and operated pharmacy dedicated to providing superior customer service and high-quality products to our community. Our knowledgeable and friendly staff are always available to answer your questions and help you find the right products to meet your healthcare needs.</p>
                 <span class="more">
-                    <p></br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae iste nostrum dolore quae totam veritatis recusandae, doloremque sequi libero. Autem, distinctio. Saepe accusamus, iste reiciendis repellat suscipit praesentium commodi maiores.</p>
+                    <p><br></p>
+                    <p>Products and Services: We offer a wide range of prescription and over-the-counter medications, as well as vitamins, supplements, and natural health products. Our pharmacy also provides prescription compounding services, medication synchronization, and medication therapy management. We offer free delivery to our local area and accept most insurance plans.</p>
                 </span>
                 <button class="more-btn">Read More</button>
             </div>
             <div class="company-misssion">
                 <h4>Our mission</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fuga, accusamus laboriosam delectus similique sit odio, corporis cumque quod modi tempore perferendis iure culpa sequi hic aut nesciunt ullam. Incidunt.</p>
+                <p>At One Source Pharmacy, we take our mission very seriously. We are committed to providing our patients with personalized and compassionate care that exceeds their expectations. We understand that healthcare can be a complex and often confusing field, and we strive to be a trusted resource for our patients, providing them with the information and guidance they need to make informed decisions about their health.
+                    We believe that exceptional service and quality products are the foundation of our business, and we are dedicated to maintaining the highest standards of professionalism and integrity in everything we do. Whether you need a prescription filled, advice on a health issue, or just a friendly face to talk to, our knowledgeable and friendly staff are here to help.</p>
+                <p><br></p>
+                <p>At One Source Pharmacy, we are more than just a pharmacy – we are a partner in your healthcare journey. We are committed to building long-term relationships with our patients, and we will always go above and beyond to ensure that you receive the care and attention you deserve.</p>
+            </div>
+            <div class="privacy-policy">
+                <h4>Privacy Policy</h4>
+                <p>One Source pharmacy is committed to protecting the privacy of its customers. This Privacy Policy explains how we collect, use, and protect the personal information of our customers.</p>
             </div>
 
         </div>
-        <div class="privacy-policy">
-            <h4>Privacy Policy</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quas quaerat quisquam voluptate voluptatum officia hic illo incidunt dolor, officiis ea ipsam assumenda accusamus rem facere debitis. Voluptas, eveniet blanditiis.</p>
-        </div>
+        
         <div class="social-media">
             <div>
                 <h3>Keep updated</h3>

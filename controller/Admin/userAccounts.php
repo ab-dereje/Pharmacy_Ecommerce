@@ -11,6 +11,7 @@ if (empty($_SESSION['user'])) {
 
 $sql="SELECT * FROM USER;";
 
+
 $result=mysqli_query($con,$sql);
 $resultCheck=mysqli_num_rows($result);
 if ($resultCheck > 0){

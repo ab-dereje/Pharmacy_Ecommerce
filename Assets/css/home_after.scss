@@ -127,7 +127,7 @@ body {
                     // color: #11698E;
                     // width: fit-content;
                     position: relative;
-                    left: 9rem;
+                    left: 8rem;
                     bottom: 1.3rem;
                     font-size: x-large;
                     font-weight: 700;
@@ -250,24 +250,28 @@ body {
             font-weight: 800;
         }
         .about-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            // display: grid;
+            // grid-template-columns: repeat(2, 1fr);
+            display: flex;
+            flex-direction: column;
             margin: 3rem;
             margin-top: 4rem;
+            margin-bottom: 2rem;
             .company-info {
                 h4 {
                     padding-bottom: 1rem;
                     color: #19456B;
                 }
                 color: #11698E;
-                margin-right: 1rem;
-                margin-bottom: 2rem;
+                margin-right: 3rem;
+                margin-bottom: 0.5rem;
+                margin-left: 3rem;
                 background-color: white;
                 width: fit-content;
                 height: fit-content;
                 padding: 1rem;
-                border-radius: 8px;
-                box-shadow: 0px 5px 15px #11698E;
+                border-radius: 8px 8px 0px 0px;
+                box-shadow: 5px 0px 5px #11698E;
                 span {
                     display: none;
                 }
@@ -292,32 +296,33 @@ body {
                     color: #19456B;
                 }
                 color: #11698E;
-                margin-bottom: 2rem;
-                margin-right: 1rem;
-                margin-left: 1rem;
+                margin-bottom: 0.5rem;
+                margin-right: 3rem;
+                margin-left: 3rem;
                 background-color: white;
                 width: fit-content;
                 height: fit-content;
-                height: 9.5rem;
+                height: 12rem;
                 padding: 1rem;
-                border-radius: 8px;
-                box-shadow: 0px 5px 15px #11698E;
+                // border-radius: 8px;
+                box-shadow: 5px 0px 5px #11698E;
             }
-        }
-        .privacy-policy {
-            h4 {
-                padding-bottom: 1rem;
-                color: #19456B;
+            .privacy-policy {
+                h4 {
+                    padding-bottom: 1rem;
+                    color: #19456B;
+                }
+                color: #11698E;
+                margin-bottom: 2rem;
+                margin-left: 3rem;
+                margin-right: 3rem;
+                background-color: white;
+                width: fit-content;
+                height: fit-content;
+                padding: 1rem;
+                border-radius:0px 0px 8px 8px;
+                box-shadow: 5px 0px 5px #11698E;
             }
-            color: #11698E;
-            margin-bottom: 2rem;
-            margin-left: 30%;
-            background-color: white;
-            width: 40%;
-            height: fit-content;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0px 5px 15px #11698E;
         }
         .social-media {
             display: flex;

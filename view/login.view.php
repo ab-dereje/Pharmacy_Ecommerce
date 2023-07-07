@@ -54,7 +54,7 @@ if (isset($_GET['div1'])) {
                     <button type='submit' class='Lbtn'>Login</button>
                     <!-- <button type='submit' class='Cbtn'>Signup</button> -->
                     <p>Or</p>
-                    <a href="./index.php" class="Signup">Sign Up</a>
+                    <a href="./create.php" class="Signup">Sign Up</a>
                 </div>
                 <?php echo $div; ?>
                 <?php echo $div1; ?>
